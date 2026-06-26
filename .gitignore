@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# EUL-protected microdata — NEVER commit.
+# LFS person-level files are licensed to a single named user under the UK Data
+# Service End User Licence and must not be redistributed. See data/canaries/lfs/README.md
+# for how to obtain them yourself.
+data/canaries/lfs/*.zip
+data/canaries/lfs/*.dta
+
+# Large raw source downloads (re-fetchable by the scripts: ONS/BoE/DESNZ)
+data/takeoff/raw/
+
+# Third-party copyrighted source documents (not ours to redistribute) — the
+# scripts only need the small derived CSVs in reference/, which are kept.
+reference/*.pdf
+reference/*.txt
+reference/*.xlsx
+reference/ukds_docs/
+reference/lloyds/
+
+# Build / scratch artifacts
+dashboard/_*.png
+dashboard/design-variants/
+charts/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+EMAIL_methodology.md

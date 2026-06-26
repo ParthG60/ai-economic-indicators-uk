@@ -1,0 +1,24 @@
+soc,title,quintile,exposure,aitype,wfh_prop,pre,post,pre_n,pct
+4216,Receptionists,5,0.5,,2.0,23961.5,11317.0,110,-52.8
+4132,Pensions and insurance clerks and assistants,5,0.6,,52.0,10793.3,5712.8,53,-47.1
+4122,"Book-keepers, payroll managers and wages clerks",5,0.6,,37.0,42329.0,26151.6,187,-38.2
+2440,Business and financial project management professionals,4,0.4,,49.0,9827.5,7315.4,40,-25.6
+4111,National government administrative occupations,5,0.6,automation,36.0,19389.2,16199.6,80,-16.5
+2142,Graphic and multimedia designers,4,0.5,,55.0,8557.0,7266.8,40,-15.1
+2139,Information technology professionals n.e.c.,4,0.5,augmentation,64.0,10461.0,9612.0,43,-8.1
+7211,Call and contact centre occupations,5,0.5,augmentation,32.0,18186.7,17044.4,86,-6.3
+7219,Customer service occupations n.e.c.,5,0.6,,28.0,48290.3,46610.8,220,-3.5
+3571,Human resources and industrial relations officers,4,0.4,,39.0,26117.3,25867.8,115,-1.0
+4159,Other administrative occupations n.e.c.,5,0.6,,28.0,54364.2,53907.4,242,-0.8
+2431,Management consultants and business analysts,4,0.4,,55.0,12669.0,12626.2,51,-0.3
+2134,Programmers and software development professionals,5,0.6,augmentation,63.0,46050.0,46024.6,178,-0.1
+3544,Data analysts,5,0.5,,55.0,17287.2,17469.6,70,1.1
+1150,Managers and directors in retail and wholesale,4,0.4,augmentation,10.0,13334.0,14218.2,67,6.6
+2422,Finance and investment analysts and advisers,5,0.6,augmentation,43.0,30756.7,33544.4,118,9.1
+4129,Financial administrative occupations n.e.c.,5,0.6,,34.0,19138.7,23355.6,93,22.0
+3554,Advertising and marketing associate professionals,5,0.6,,50.0,32874.0,40803.6,129,24.1
+4131,Records clerks and assistants,5,0.6,,20.0,8007.7,10029.2,41,25.2
+2421,Chartered and certified accountants,5,0.5,augmentation,40.0,11344.2,14957.6,60,31.9
+7112,Retail cashiers and check-out operators,4,0.4,augmentation,0.0,10165.8,16095.0,46,58.3
+3132,IT user support technicians,4,0.5,augmentation,43.0,8651.5,14017.2,42,62.0
+3552,Business sales executives,4,0.5,augmentation,30.0,9705.5,19551.4,47,101.4

@@ -1,0 +1,46 @@
+key,indicator,period,period_date,score
+output_growth,"Output growth (GDP, YoY)",2022,2022-12-31,mild
+labour_productivity_growth,"Labour productivity growth (output/hr, YoY)",2022,2022-12-31,neutral
+computer_services_imports,Computer-services imports (% of total imports),2022,2022-12-31,mild
+capital_share,Capital share of income (100 - labour share),2022,2022-12-31,mild
+tfp_growth,"Multifactor productivity growth (TFP, YoY)",2022,2022-12-31,neutral
+real_yield,10y real interest rate (index-linked gilt),2022,2022-12-31,neutral
+ipp_investment_share,"IPP (software + R&D) investment (% of GFCF, 4q avg)",2022,2022-12-31,mild
+infocomm_investment_share,"Info & Comms sector investment (% of business investment, 4q avg)",2022,2022-12-31,neutral
+electricity_consumption_growth,Electricity consumption growth (YoY),2022,2022-12-31,contradictory
+output_growth,"Output growth (GDP, YoY)",2023,2023-12-31,neutral
+labour_productivity_growth,"Labour productivity growth (output/hr, YoY)",2023,2023-12-31,contradictory
+computer_services_imports,Computer-services imports (% of total imports),2023,2023-12-31,mild
+capital_share,Capital share of income (100 - labour share),2023,2023-12-31,neutral
+tfp_growth,"Multifactor productivity growth (TFP, YoY)",2023,2023-12-31,contradictory
+real_yield,10y real interest rate (index-linked gilt),2023,2023-12-31,neutral
+ipp_investment_share,"IPP (software + R&D) investment (% of GFCF, 4q avg)",2023,2023-12-31,mild
+infocomm_investment_share,"Info & Comms sector investment (% of business investment, 4q avg)",2023,2023-12-31,neutral
+electricity_consumption_growth,Electricity consumption growth (YoY),2023,2023-12-31,neutral
+output_growth,"Output growth (GDP, YoY)",2024,2024-12-31,neutral
+labour_productivity_growth,"Labour productivity growth (output/hr, YoY)",2024,2024-12-31,contradictory
+computer_services_imports,Computer-services imports (% of total imports),2024,2024-12-31,strong
+capital_share,Capital share of income (100 - labour share),2024,2024-12-31,neutral
+tfp_growth,"Multifactor productivity growth (TFP, YoY)",2024,2024-12-31,neutral
+real_yield,10y real interest rate (index-linked gilt),2024,2024-12-31,neutral
+ipp_investment_share,"IPP (software + R&D) investment (% of GFCF, 4q avg)",2024,2024-12-31,mild
+infocomm_investment_share,"Info & Comms sector investment (% of business investment, 4q avg)",2024,2024-12-31,neutral
+electricity_consumption_growth,Electricity consumption growth (YoY),2024,2024-12-31,neutral
+output_growth,"Output growth (GDP, YoY)",2025,2025-12-31,neutral
+labour_productivity_growth,"Labour productivity growth (output/hr, YoY)",2025,2025-12-31,neutral
+computer_services_imports,Computer-services imports (% of total imports),2025,2025-12-31,strong
+capital_share,Capital share of income (100 - labour share),2025,2025-12-31,neutral
+tfp_growth,"Multifactor productivity growth (TFP, YoY)",2025,2025-12-31,neutral
+real_yield,10y real interest rate (index-linked gilt),2025,2025-12-31,neutral
+ipp_investment_share,"IPP (software + R&D) investment (% of GFCF, 4q avg)",2025,2025-12-31,mild
+infocomm_investment_share,"Info & Comms sector investment (% of business investment, 4q avg)",2025,2025-12-31,neutral
+electricity_consumption_growth,Electricity consumption growth (YoY),2025,2025-12-31,neutral
+output_growth,"Output growth (GDP, YoY)",2026,2026-12-31,neutral
+labour_productivity_growth,"Labour productivity growth (output/hr, YoY)",2026,2026-12-31,neutral
+computer_services_imports,Computer-services imports (% of total imports),2026,2026-12-31,strong
+capital_share,Capital share of income (100 - labour share),2026,2026-12-31,neutral
+tfp_growth,"Multifactor productivity growth (TFP, YoY)",2026,2026-12-31,neutral
+real_yield,10y real interest rate (index-linked gilt),2026,2026-12-31,neutral
+ipp_investment_share,"IPP (software + R&D) investment (% of GFCF, 4q avg)",2026,2026-12-31,mild
+infocomm_investment_share,"Info & Comms sector investment (% of business investment, 4q avg)",2026,2026-12-31,neutral
+electricity_consumption_growth,Electricity consumption growth (YoY),2026,2026-12-31,neutral

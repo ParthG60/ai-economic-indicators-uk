@@ -1,0 +1,101 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap' rel='stylesheet'><script src='https://cdn.plot.ly/plotly-3.5.0.min.js'></script><style>
+ :root{--ink:#0b1f33;--muted:#5c6b78;--accent:#0e7c86;--paper:#f4f7f8;--surface:#ffffff;--rule:#dde6ea}
+ *{box-sizing:border-box} html{scroll-behavior:smooth}
+ body{font-family:"Hanken Grotesk", system-ui, -apple-system, sans-serif;margin:0;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;font-size:15px}
+ .wrap,main,footer{max-width:1160px;margin:0 auto;padding-left:28px;padding-right:28px}
+ .serif{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+ .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+ /* nav */
+ .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+ .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:13px;padding-bottom:13px}
+ .brand{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:15px;color:var(--ink);border:0;letter-spacing:-.2px}
+ .brand b{color:var(--accent);font-weight:700}
+ .navlinks{display:flex;gap:3px;flex-wrap:wrap}
+ .navlinks a{font-size:13px;color:var(--muted);border:0;padding:6px 12px;border-radius:7px;transition:.15s}
+ .navlinks a:hover{background:#eef5f6;color:var(--ink)}
+ .navlinks a.active{background:var(--accent);color:#fff}
+ /* page header */
+ .pagehead{padding:44px 0 4px}
+ .kicker{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+ h1{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:clamp(32px,5vw,50px);line-height:1.03;letter-spacing:-.6px;margin:0;max-width:18ch}
+ .lede{font-size:17.5px;color:var(--muted);max-width:62ch;margin:20px 0 0;line-height:1.55}
+ .meta{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);margin:22px 0 0;display:flex;gap:8px 22px;flex-wrap:wrap;align-items:center}
+ .dot{width:7px;height:7px;border-radius:50%;background:#0e7c86;display:inline-block;margin-right:7px;vertical-align:1px}
+ /* sections */
+ main{padding-top:0;padding-bottom:60px;animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+ section{padding:18px 0 8px}
+ @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+ .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 11px}
+ h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:clamp(25px,3.4vw,33px);letter-spacing:-.4px;margin:0 0 6px;line-height:1.1}
+ .sub{color:var(--muted);font-size:15px;margin:10px 0 22px;max-width:78ch;line-height:1.6}
+ .sub b{color:var(--ink);font-weight:600} .sub i{color:#46586a}
+ .verdict{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:20px;font-weight:500;margin:6px 0 16px;color:var(--ink);max-width:80ch;line-height:1.4}
+ .verdict b{color:#0e7c86;font-weight:700}
+ /* metric cards */
+ .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:1px;margin:4px 0 26px;background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+ .card{background:var(--surface);padding:18px 20px;transition:background .15s}
+ .card:hover{background:#f8fbfc}
+ .cval{font-family:"IBM Plex Mono",monospace;font-size:29px;font-weight:500;letter-spacing:-1px;line-height:1}
+ .clab{font-size:13px;font-weight:600;margin-top:9px;color:var(--ink)}
+ .csub{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+ /* home cards (hover to choose a track) */
+ .home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:18px;margin:34px 0 8px}
+ .home-card{display:block;border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:26px 24px;box-shadow:0 1px 2px rgba(11,31,51,.04);transition:transform .18s cubic-bezier(.2,.7,.2,1),box-shadow .18s,border-color .18s}
+ .home-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,31,51,.11);border-color:#cfe0e3}
+ .home-card .hn{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent);letter-spacing:.18em}
+ .home-card h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:22px;margin:12px 0 8px;color:var(--ink);letter-spacing:-.3px}
+ .home-card p{font-size:14px;color:var(--muted);margin:0 0 18px;line-height:1.55}
+ .home-card .stat{font-family:"IBM Plex Mono",monospace;font-size:31px;font-weight:500;color:var(--ink);letter-spacing:-1px;line-height:1}
+ .home-card .statl{font-size:12px;color:var(--muted);margin-top:5px;line-height:1.45}
+ .home-card .go{font-size:13px;color:var(--accent);font-weight:600;margin-top:18px;display:inline-block}
+ /* charts */
+ .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(460px,100%),1fr));gap:22px}
+ .grid1{display:block}
+ .chart{border:1px solid var(--rule);border-radius:11px;padding:6px 12px 8px;background:var(--surface);min-width:0;margin-bottom:22px;box-shadow:0 1px 2px rgba(11,31,51,.04)}
+ .chart-plot{overflow:hidden;min-width:0}
+ .chart .js-plotly-plot,.chart .plot-container,.chart .svg-container{width:100%!important;max-width:100%}
+ .chart-t{font-size:13px;font-weight:600;color:var(--ink);padding:11px 6px 2px;letter-spacing:.01em;overflow-wrap:break-word}
+ .chart-t i{color:#46586a;font-style:italic}
+ .chart-sub{font-size:11.5px;font-weight:400;color:#5c6b78;padding:0 6px 5px;line-height:1.45;overflow-wrap:break-word}
+ .chart-sub b{color:var(--ink);font-weight:600}
+ /* reading guide (compact orientation tiles) */
+ .guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:13px;margin:8px 0 26px}
+ .gcard{background:var(--surface);border:1px solid var(--rule);border-radius:11px;padding:15px 17px;box-shadow:0 1px 2px rgba(11,31,51,.04)}
+ .gcard .gl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 7px}
+ .gcard p{margin:0;font-size:13px;color:#3c4a57;line-height:1.55}
+ .gcard p b{color:var(--ink);font-weight:600}
+ /* evidence legend + note */
+ .legend{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:12.5px;color:var(--muted);margin:10px 0 18px}
+ .legend .sq{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:7px;vertical-align:-1px;border:1px solid var(--rule)}
+ .note{background:#eef5f6;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;padding:14px 17px;font-size:13.5px;color:#3c4a57;margin:14px 0 22px;line-height:1.62;max-width:92ch}
+ .note b{color:var(--ink)} .note i{color:#46586a}
+ /* data & methodology */
+ .method{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:24px 26px 12px;margin:34px 0 0}
+ .method h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:19px;margin:0 0 2px;color:var(--ink)}
+ .method h4{font-size:11.5px;font-family:"IBM Plex Mono",monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:18px 0 6px}
+ .method p{font-size:13.5px;color:#3c4a57;line-height:1.62;margin:0 0 12px;max-width:92ch}
+ .method p b{color:var(--ink)} .method p i{color:#46586a}
+ footer{padding-top:30px;padding-bottom:56px;color:var(--muted);font-size:12px;line-height:1.7;font-family:"IBM Plex Mono",monospace;letter-spacing:.02em;border-top:1px solid var(--rule);margin-top:30px}
+ a{color:var(--accent);text-decoration:none;border-bottom:1px solid #dde6ea}
+ @media (max-width:760px){
+   .wrap,main,footer{padding-left:18px;padding-right:18px}
+   .pagehead{padding:30px 0 2px} .lede{font-size:15.5px}
+   .sub{font-size:14px} .cval{font-size:25px} .verdict{font-size:17px}
+   .grid2{grid-template-columns:1fr} .cards{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+ }
+</style><title>UK AI Economic Indicators</title></head><body><div class='nav'><div class='wrap'><a class='brand' href='index.html'>UK AI&nbsp;<b>Economic Indicators</b></a><nav class='navlinks'><a href='index.html' class='active'>Home</a><a href='adoption.html' class=''>Adoption</a><a href='transformation.html' class=''>Transformation</a><a href='canaries.html' class=''>Labour market</a></nav></div></div><main><div class='pagehead'><p class='kicker'>UK economic measurement, after the Stanford Digital Economy Lab</p><h1>UK AI Economic Indicators</h1><p class='lede'>Is AI being adopted, changing the wider economy, and reshaping who gets hired in the UK? Three tracks, each built from public UK data. Pick one to begin.</p><div class='meta'><span><span class='dot'></span>ONS &middot; Bank of England &middot; DESNZ &middot; Ofcom &middot; UK Data Service</span></div></div><div class='home-grid'><a class='home-card' href='adoption.html'><div class='hn'>01</div><h3>Adoption</h3><p>How far AI use has spread across UK firms and people, and whether the public expects to gain from it.</p><div class='stat'>54%</div><div class='statl'>of UK adults have used an AI tool, up from 31% in 2023</div><div class='go'>View the adoption track &rarr;</div></a><a class='home-card' href='transformation.html'><div class='hn'>02</div><h3>Transformation</h3><p>Whether AI is yet visible in the wider economy as fast, capital-led growth, across nine macro indicators.</p><div class='stat'>1&thinsp;/&thinsp;9</div><div class='statl'>indicators show strong evidence of takeoff; the rest are mild or neutral</div><div class='go'>View the transformation track &rarr;</div></a><a class='home-card' href='canaries.html'><div class='hn'>03</div><h3>Labour market</h3><p>Whether AI is changing who gets hired, starting with young workers in the most exposed jobs. After Stanford's &lsquo;canaries&rsquo; study.</p><div class='stat'>-28%</div><div class='statl'>hiring of under-30s into the most AI-exposed jobs, since late 2022</div><div class='go'>View the labour-market track &rarr;</div></a></div></main><footer><div class='wrap' style='padding:0'>Built from public UK data: ONS (Business Insights survey, Labour Force Survey microdata via the UK Data Service, national accounts, productivity, trade, the Opinions and Lifestyle Survey), Bank of England, the Department for Energy Security and Net Zero, and Ofcom. Occupational exposure from the ILO (2025); automation and augmentation shares from the Anthropic Economic Index; cross-country firm adoption from Yotzov and co-authors (2026). After the Stanford Digital Economy Lab. Colours are colour-blind-safe. Charts are interactive: hover, zoom, and click the legend.</div></footer><script>
+(function(){
+  function resizeAll(){
+    if(!window.Plotly) return;
+    document.querySelectorAll('.js-plotly-plot').forEach(function(gd){ try{ window.Plotly.Plots.resize(gd); }catch(e){} });
+  }
+  var raf=0;
+  function schedule(){ if(raf) cancelAnimationFrame(raf); raf=requestAnimationFrame(resizeAll); }
+  window.addEventListener('resize', schedule);
+  window.addEventListener('load', function(){ resizeAll(); setTimeout(resizeAll,250); });
+  if('ResizeObserver' in window){
+    var ro=new ResizeObserver(schedule);
+    document.querySelectorAll('.chart').forEach(function(c){ ro.observe(c); });
+  }
+})();
+</script></body></html>

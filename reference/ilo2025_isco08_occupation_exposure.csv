@@ -1,0 +1,428 @@
+isco4,title,major1d,n_tasks,mean_gpt4o,sd_gpt4o,mean_gemini
+1111,"Legislators","1 - Managers",8,0.3100,0.0422,0.3162
+1112,"Senior Government Officials","1 - Managers",9,0.3700,0.0564,0.3833
+1113,"Traditional Chiefs and Heads of Villages","1 - Managers",7,0.2253,0.1062,0.2357
+1114,"Senior Officials of Special-interest Organizations","1 - Managers",9,0.3833,0.0539,0.3533
+1120,"Managing Directors and Chief Executives","1 - Managers",11,0.3927,0.0584,0.3591
+1211,"Finance Managers","1 - Managers",8,0.3919,0.0433,0.3538
+1212,"Human Resource Managers","1 - Managers",11,0.3664,0.0611,0.3464
+1213,"Policy and Planning Managers","1 - Managers",9,0.3652,0.0352,0.3533
+1219,"Business Services and Administration Managers Not Elsewhere Classified","1 - Managers",10,0.4180,0.0707,0.4200
+1221,"Sales and Marketing Managers","1 - Managers",8,0.4231,0.0720,0.4012
+1222,"Advertising and Public Relations Managers","1 - Managers",8,0.3852,0.0353,0.3912
+1223,"Research and Development Managers","1 - Managers",8,0.4288,0.0723,0.3662
+1311,"Agricultural and Forestry Production Managers","1 - Managers",12,0.2603,0.1479,0.2792
+1312,"Aquaculture and Fisheries Production Managers","1 - Managers",13,0.2100,0.0803,0.2292
+1321,"Manufacturing Managers","1 - Managers",12,0.3758,0.1037,0.3817
+1322,"Mining Managers","1 - Managers",10,0.3467,0.0901,0.3480
+1323,"Construction Managers","1 - Managers",11,0.3414,0.0732,0.3355
+1324,"Supply, Distribution and Related Managers","1 - Managers",12,0.3942,0.0454,0.3758
+1330,"Information and Communications Technology Service Managers","1 - Managers",11,0.4486,0.0756,0.4345
+1341,"Child Care Service Managers","1 - Managers",9,0.3156,0.1175,0.2833
+1342,"Health Service Managers","1 - Managers",10,0.3780,0.0698,0.3480
+1343,"Aged Care Service Managers","1 - Managers",10,0.3445,0.0872,0.3430
+1344,"Social Welfare Managers","1 - Managers",10,0.3625,0.0346,0.3760
+1345,"Education Managers","1 - Managers",11,0.3523,0.0742,0.3736
+1346,"Financial and Insurance Services Branch managers","1 - Managers",11,0.4886,0.1153,0.4691
+1349,"Professional Services Managers Not Elsewhere Classified","1 - Managers",9,0.3694,0.0439,0.3978
+1411,"Hotel Managers","1 - Managers",10,0.3720,0.1255,0.3690
+1412,"Restaurant Managers","1 - Managers",10,0.3400,0.1010,0.3860
+1420,"Retail and Wholesale Trade Managers","1 - Managers",7,0.4317,0.1262,0.4400
+1431,"Sports, Recreation and Cultural Centre Managers","1 - Managers",9,0.3094,0.0955,0.3356
+2111,"Physicists and Astronomers","2 - Professionals",11,0.3905,0.1172,0.3955
+2112,"Meteorologists","2 - Professionals",9,0.5628,0.0528,0.6067
+2113,"Chemists","2 - Professionals",9,0.3939,0.0606,0.3811
+2114,"Geologists and geophysicists","2 - Professionals",12,0.3625,0.0971,0.3642
+2120,"Mathematicians, Actuaries and Statisticians","2 - Professionals",10,0.5490,0.0831,0.5740
+2131,"Biologists, Botanists, Zoologists and Related Professionals","2 - Professionals",8,0.4188,0.1220,0.3750
+2132,"Farming, Forestry and Fisheries Advisers","2 - Professionals",12,0.2704,0.1070,0.3000
+2133,"Environmental Protection Professionals","2 - Professionals",7,0.3746,0.0556,0.3929
+2141,"Industrial and Production Engineers","2 - Professionals",10,0.3740,0.0753,0.3600
+2142,"Civil Engineers","2 - Professionals",7,0.2971,0.0539,0.3071
+2143,"Environmental Engineers","2 - Professionals",9,0.3794,0.0633,0.3833
+2144,"Mechanical Engineers","2 - Professionals",7,0.3396,0.0896,0.3071
+2145,"Chemical Engineers","2 - Professionals",8,0.3645,0.1014,0.3387
+2146,"Mining Engineers, Metallurgists and Related Professionals","2 - Professionals",9,0.2983,0.0548,0.2867
+2149,"Engineering Professionals Not Elsewhere Classified","2 - Professionals",9,0.3206,0.0997,0.2889
+2151,"Electrical Engineers","2 - Professionals",6,0.3033,0.1033,0.3250
+2152,"Electronics Engineers","2 - Professionals",8,0.3851,0.1023,0.4625
+2153,"Telecommunications Engineers","2 - Professionals",7,0.4500,0.1074,0.5143
+2161,"Building Architects","2 - Professionals",9,0.3850,0.0825,0.3578
+2162,"Landscape Architects","2 - Professionals",9,0.3728,0.0712,0.3689
+2163,"Product and Garment Designers","2 - Professionals",9,0.3494,0.0625,0.3500
+2164,"Town and Traffic Planners","2 - Professionals",8,0.4163,0.0699,0.4000
+2165,"Cartographers and Surveyors","2 - Professionals",8,0.4125,0.0902,0.4825
+2166,"Graphic and Multimedia Designers","2 - Professionals",10,0.4660,0.0758,0.5200
+2211,"Generalist Medical Practitioners","2 - Professionals",11,0.2750,0.0929,0.2982
+2212,"Specialist Medical Practitioners","2 - Professionals",12,0.2738,0.1102,0.2692
+2221,"Nursing Professionals","2 - Professionals",10,0.2450,0.1217,0.2590
+2222,"Midwifery Professionals","2 - Professionals",8,0.2744,0.1181,0.3238
+2230,"Traditional and Complementary Medicine Professionals","2 - Professionals",7,0.3436,0.1029,0.3043
+2240,"Paramedical Practitioners","2 - Professionals",9,0.2236,0.0837,0.2433
+2250,"Veterinarians","2 - Professionals",9,0.1450,0.0513,0.1389
+2261,"Dentists","2 - Professionals",12,0.1393,0.0524,0.1592
+2262,"Pharmacists","2 - Professionals",13,0.3147,0.0870,0.3500
+2263,"Environmental and Occupational Health and Hygiene Professionals","2 - Professionals",10,0.2825,0.0430,0.2780
+2264,"Physiotherapists","2 - Professionals",7,0.2743,0.1407,0.2929
+2265,"Dieticians and Nutritionists","2 - Professionals",7,0.4164,0.0914,0.4114
+2266,"Audiologists and Speech Therapists","2 - Professionals",7,0.2353,0.0374,0.2400
+2267,"Optometrists and Ophthalmic Opticians","2 - Professionals",7,0.2529,0.0641,0.2214
+2269,"Health Professionals Not Elsewhere Classified","2 - Professionals",8,0.1925,0.0693,0.1975
+2310,"University and Higher Education Teachers","2 - Professionals",9,0.3633,0.1102,0.3756
+2320,"Vocational Education Teachers","2 - Professionals",10,0.3415,0.0958,0.3550
+2330,"Secondary Education Teachers","2 - Professionals",11,0.2800,0.0692,0.3164
+2341,"Primary School Teachers","2 - Professionals",10,0.2695,0.0610,0.2530
+2342,"Early Childhood Educators","2 - Professionals",9,0.2272,0.0578,0.1889
+2351,"Education Methods Specialists","2 - Professionals",10,0.3760,0.1033,0.4100
+2352,"Special Needs Teachers","2 - Professionals",11,0.2718,0.0725,0.2955
+2353,"Other Language Teachers","2 - Professionals",8,0.3356,0.0842,0.3425
+2354,"Other Music Teachers","2 - Professionals",11,0.3755,0.1014,0.3318
+2355,"Other Arts Teachers","2 - Professionals",10,0.3475,0.0979,0.3450
+2356,"Information Technology Trainers","2 - Professionals",6,0.4567,0.0791,0.4833
+2359,"Teaching Professionals Not Elsewhere Classified","2 - Professionals",12,0.3337,0.0988,0.3200
+2411,"Accountants","2 - Professionals",8,0.5015,0.0822,0.5250
+2412,"Financial and Investment Advisers","2 - Professionals",6,0.5608,0.0961,0.5883
+2413,"Financial Analysts","2 - Professionals",9,0.5939,0.0814,0.6450
+2421,"Management and Organization Analysts","2 - Professionals",9,0.4241,0.0907,0.4756
+2422,"Policy Administration Professionals","2 - Professionals",7,0.4286,0.0544,0.4071
+2423,"Personnel and Careers Professionals","2 - Professionals",5,0.4460,0.0855,0.4500
+2424,"Training and Staff Development Professionals","2 - Professionals",8,0.3975,0.0653,0.4163
+2431,"Advertising and Marketing Professionals","2 - Professionals",9,0.5594,0.0927,0.5500
+2432,"Public Relations Professionals","2 - Professionals",8,0.4381,0.1074,0.4250
+2433,"Technical and Medical Sales Professionals (excluding ICT)","2 - Professionals",12,0.4811,0.0902,0.5175
+2434,"Information and Communications Technology Sales Professionals","2 - Professionals",7,0.4950,0.0906,0.5300
+2511,"Systems Analysts","2 - Professionals",7,0.4871,0.0447,0.4929
+2512,"Software Developers","2 - Professionals",8,0.5544,0.0811,0.5663
+2513,"Web and Multimedia Developers","2 - Professionals",5,0.5990,0.0862,0.6100
+2514,"Applications Programmers","2 - Professionals",5,0.5520,0.0891,0.5900
+2519,"Software and Applications Developers and Analysts Not Elsewhere Classified","2 - Professionals",5,0.5584,0.1374,0.5420
+2521,"Database Designers and Administrators","2 - Professionals",6,0.5625,0.0897,0.6083
+2522,"Systems Aministrators","2 - Professionals",5,0.5420,0.0614,0.5900
+2523,"Computer Network Professionals","2 - Professionals",7,0.5100,0.0789,0.5214
+2529,"Database and Network Professionals Not Elsewhere Classified","2 - Professionals",8,0.4944,0.0291,0.4788
+2611,"Lawyers","2 - Professionals",10,0.3435,0.0996,0.3830
+2612,"Judges","2 - Professionals",7,0.3036,0.0703,0.3214
+2619,"Legal Professionals Not Elsewhere Classified","2 - Professionals",4,0.3708,0.0864,0.3750
+2621,"Archivists and Curators","2 - Professionals",10,0.4375,0.1051,0.5080
+2622,"Librarians and Related Information Professionals","2 - Professionals",9,0.5200,0.0503,0.5867
+2631,"Economists","2 - Professionals",12,0.5625,0.0495,0.5942
+2632,"Sociologists, Anthropologists and Related Professionals","2 - Professionals",9,0.4778,0.1216,0.4778
+2633,"Philosophers, Historians and Political Scientists","2 - Professionals",8,0.4675,0.0524,0.4750
+2634,"Psychologists","2 - Professionals",9,0.3933,0.1161,0.3878
+2635,"Social Work and Counselling Professionals","2 - Professionals",11,0.2891,0.0950,0.2773
+2636,"Religious Professionals","2 - Professionals",9,0.1671,0.1226,0.1644
+2641,"Authors and Related Writers","2 - Professionals",6,0.5242,0.0933,0.5667
+2642,"Journalists","2 - Professionals",10,0.5185,0.0866,0.5530
+2643,"Translators, Interpreters and Other Linguists","2 - Professionals",6,0.5733,0.1087,0.6117
+2651,"Visual Artists","2 - Professionals",8,0.2264,0.0662,0.1938
+2652,"Musicians, Singers and Composers","2 - Professionals",8,0.2607,0.0793,0.3000
+2653,"Dancers and Choreographers","2 - Professionals",6,0.1954,0.1113,0.1917
+2654,"Film, Stage and Related Directors and Producers","2 - Professionals",7,0.3903,0.0702,0.3400
+2655,"Actors","2 - Professionals",7,0.3000,0.1164,0.3286
+2656,"Announcers on Radio, Television and Other Media","2 - Professionals",5,0.4550,0.0976,0.4900
+2659,"Creative and Performing Artists Not Elsewhere Classified","2 - Professionals",4,0.1263,0.0673,0.1325
+3111,"Chemical and Physical Science Technicians","3 - Technicians and associate professionals",6,0.2767,0.1103,0.2383
+3112,"Civil Engineering Technicians","3 - Technicians and associate professionals",9,0.2794,0.0880,0.2733
+3113,"Electrical Engineering Technicians","3 - Technicians and associate professionals",6,0.2572,0.0290,0.2833
+3114,"Electronics Engineering Technicians","3 - Technicians and associate professionals",7,0.3479,0.0961,0.4114
+3115,"Mechanical Engineering Technicians","3 - Technicians and associate professionals",8,0.2850,0.0961,0.2437
+3116,"Chemical Engineering Technicians","3 - Technicians and associate professionals",5,0.3168,0.0323,0.3300
+3117,"Mining and metallurgical technicians","3 - Technicians and associate professionals",8,0.2956,0.0616,0.2687
+3118,"Draughtspersons","3 - Technicians and associate professionals",8,0.3475,0.0923,0.3475
+3119,"Physical and Engineering Science Technicians Not Elsewhere Classified","3 - Technicians and associate professionals",5,0.2420,0.0238,0.2700
+3121,"Mining Supervisors","3 - Technicians and associate professionals",5,0.2980,0.0828,0.2760
+3122,"Manufacturing Supervisors","3 - Technicians and associate professionals",6,0.3508,0.1205,0.3433
+3123,"Construction Supervisors","3 - Technicians and associate professionals",6,0.2917,0.0639,0.2717
+3131,"Power Production Plant Operators","3 - Technicians and associate professionals",6,0.2925,0.1112,0.2583
+3132,"Incinerator and Water Treatment Plant Operators","3 - Technicians and associate professionals",8,0.2775,0.0719,0.2537
+3133,"Chemical Processing Plant Controllers","3 - Technicians and associate professionals",6,0.3108,0.0828,0.2767
+3134,"Petroleum and Natural Gas Refining Plant Operators","3 - Technicians and associate professionals",5,0.2850,0.0893,0.2960
+3135,"Metal Production Process Controllers","3 - Technicians and associate professionals",7,0.2889,0.0899,0.3257
+3141,"Life Science Technicians (excluding Medical)","3 - Technicians and associate professionals",13,0.3846,0.1546,0.3777
+3142,"Agricultural Technicians","3 - Technicians and associate professionals",9,0.2731,0.1021,0.2456
+3143,"Forestry Technicians","3 - Technicians and associate professionals",10,0.1800,0.0518,0.2430
+3151,"Ships' Engineers","3 - Technicians and associate professionals",5,0.2370,0.0397,0.2260
+3152,"Ships' Deck Officers and Pilots","3 - Technicians and associate professionals",8,0.2881,0.0616,0.2875
+3153,"Aircraft Pilots and Related Associate Professionals","3 - Technicians and associate professionals",7,0.2979,0.0857,0.2500
+3154,"Air Traffic Controllers","3 - Technicians and associate professionals",8,0.3225,0.1021,0.2975
+3155,"Air Traffic Safety Electronics Technicians","3 - Technicians and associate professionals",9,0.3476,0.1123,0.3389
+3211,"Medical Imaging and Therapeutic Equipment Technicians","3 - Technicians and associate professionals",8,0.2462,0.0445,0.1938
+3212,"Medical and Pathology Laboratory Technicians","3 - Technicians and associate professionals",10,0.3043,0.1606,0.3100
+3213,"Pharmaceutical Technicians and Assistants","3 - Technicians and associate professionals",9,0.3321,0.1211,0.2678
+3214,"Medical and Dental Prosthetic Technicians","3 - Technicians and associate professionals",10,0.1860,0.0573,0.1740
+3221,"Nursing Associate Professionals","3 - Technicians and associate professionals",6,0.2115,0.1808,0.2233
+3222,"Midwifery Associate Professionals","3 - Technicians and associate professionals",4,0.1862,0.0738,0.2075
+3230,"Traditional and Complementary Medicine Associate Professionals","3 - Technicians and associate professionals",6,0.1905,0.0815,0.1833
+3240,"Veterinary Technicians and Assistants","3 - Technicians and associate professionals",10,0.1380,0.0388,0.1440
+3251,"Dental Assistants and Therapists","3 - Technicians and associate professionals",8,0.1544,0.0941,0.1737
+3252,"Medical Records and Health Information Technicians","3 - Technicians and associate professionals",6,0.4992,0.0807,0.5333
+3253,"Community Health Workers","3 - Technicians and associate professionals",6,0.2275,0.0948,0.2217
+3254,"Dispensing Opticians","3 - Technicians and associate professionals",4,0.2225,0.0432,0.2575
+3255,"Physiotherapy Technicians and Assistants","3 - Technicians and associate professionals",6,0.1654,0.0630,0.1750
+3256,"Medical Assistants","3 - Technicians and associate professionals",10,0.3255,0.2158,0.3420
+3257,"Environmental and Occupational Health Inspectors and Associates","3 - Technicians and associate professionals",10,0.2317,0.0381,0.2530
+3258,"Ambulance Workers","3 - Technicians and associate professionals",6,0.1958,0.1313,0.2350
+3259,"Health Associate Professionals Not Elsewhere Classified","3 - Technicians and associate professionals",7,0.2881,0.1343,0.3214
+3311,"Securities and Finance Dealers and Brokers","3 - Technicians and associate professionals",5,0.6128,0.0366,0.6500
+3312,"Credit and Loans Officers","3 - Technicians and associate professionals",6,0.5850,0.0330,0.6250
+3313,"Accounting Associate Professionals","3 - Technicians and associate professionals",6,0.4350,0.0957,0.5583
+3314,"Statistical, Mathematical and Related Associate Professionals","3 - Technicians and associate professionals",8,0.5356,0.1028,0.5950
+3315,"Valuers and Loss Assessors","3 - Technicians and associate professionals",5,0.4500,0.1648,0.4480
+3321,"Insurance Representatives","3 - Technicians and associate professionals",6,0.5917,0.0729,0.5550
+3322,"Commercial Sales Representatives","3 - Technicians and associate professionals",7,0.4693,0.0759,0.4829
+3323,"Buyers","3 - Technicians and associate professionals",10,0.3960,0.0783,0.3920
+3324,"Trade Brokers","3 - Technicians and associate professionals",6,0.4508,0.0845,0.4383
+3331,"Clearing and Forwarding Aents","3 - Technicians and associate professionals",5,0.5290,0.0905,0.6160
+3332,"Conference and Event Planners","3 - Technicians and associate professionals",7,0.4629,0.1290,0.4929
+3333,"Employment agents and contractors","3 - Technicians and associate professionals",6,0.3800,0.0879,0.4000
+3334,"Real Estate Agents and Property Managers","3 - Technicians and associate professionals",7,0.3500,0.0882,0.3543
+3339,"Business Services Agents Not Elsewhere Classified","3 - Technicians and associate professionals",6,0.4367,0.1081,0.4533
+3341,"Office Supervisors","3 - Technicians and associate professionals",6,0.4158,0.1052,0.4217
+3342,"Legal Secretaries","3 - Technicians and associate professionals",7,0.5364,0.1168,0.5643
+3343,"Administrative and Executive Secretaries","3 - Technicians and associate professionals",8,0.5062,0.1057,0.5663
+3344,"Medical Secretaries","3 - Technicians and associate professionals",8,0.5319,0.1034,0.5288
+3351,"Customs and Border Inspectors","3 - Technicians and associate professionals",8,0.3044,0.1364,0.3375
+3352,"Government Tax and Excise Officials","3 - Technicians and associate professionals",4,0.5112,0.1114,0.4750
+3353,"Government Social Benefits Officials","3 - Technicians and associate professionals",4,0.4475,0.0719,0.4575
+3354,"Government Licensing Officials","3 - Technicians and associate professionals",5,0.4110,0.0869,0.4500
+3355,"Police Inspectors and Detectives","3 - Technicians and associate professionals",6,0.2375,0.0746,0.2283
+3359,"Government Regulatory AssociatePprofessionals Not Elsewhere Classified","3 - Technicians and associate professionals",4,0.3575,0.0931,0.3625
+3411,"Legal and Related Associate Professionals","3 - Technicians and associate professionals",10,0.3615,0.1138,0.4200
+3412,"Social Work Associate Professionals","3 - Technicians and associate professionals",10,0.3440,0.1129,0.3130
+3413,"Religious Associate Professionals","3 - Technicians and associate professionals",6,0.1443,0.0893,0.0967
+3421,"Athletes and Sports Players","3 - Technicians and associate professionals",8,0.2127,0.0940,0.2437
+3422,"Sports Coaches, Instructors and Officials","3 - Technicians and associate professionals",11,0.3655,0.1155,0.3827
+3423,"Fitness and Recreation Instructors and Programme Leaders","3 - Technicians and associate professionals",6,0.2467,0.0694,0.2450
+3431,"Photographers","3 - Technicians and associate professionals",8,0.3619,0.1036,0.4188
+3432,"Interior Designers and Decorators","3 - Technicians and associate professionals",10,0.3465,0.0634,0.3880
+3433,"Gallery, Museum and Library Technicians","3 - Technicians and associate professionals",9,0.3506,0.1556,0.4056
+3434,"Chefs","3 - Technicians and associate professionals",10,0.2460,0.0555,0.2550
+3511,"Information and Communications Technology Operations Technicians","3 - Technicians and associate professionals",8,0.3496,0.1555,0.4375
+3512,"Information and Communications Technology User Support Technicians","3 - Technicians and associate professionals",9,0.4683,0.1834,0.4722
+3513,"Computer Network and Systems Technicians","3 - Technicians and associate professionals",6,0.4100,0.0978,0.4500
+3514,"Web Technicians","3 - Technicians and associate professionals",7,0.5071,0.1044,0.5500
+3521,"Broadcasting and Audio-visual Technicians","3 - Technicians and associate professionals",7,0.3636,0.1243,0.3400
+3522,"Telecommunications Engineering Technicians","3 - Technicians and associate professionals",5,0.4160,0.0571,0.4900
+4110,"General Office Clerks","4 - Clerical support workers",8,0.5837,0.1135,0.6063
+4120,"Secretaries (general)","4 - Clerical support workers",8,0.5094,0.1233,0.6312
+4131,"Typists and Word Processing Operators","4 - Clerical support workers",7,0.6114,0.0471,0.6929
+4132,"Data Entry Clerks","4 - Clerical support workers",5,0.6760,0.0275,0.7240
+4211,"Bank Tellers and Related Clerks","4 - Clerical support workers",6,0.5370,0.1192,0.6000
+4212,"Bookmakers, Croupiers and Related Gaming Workers","4 - Clerical support workers",5,0.4260,0.1681,0.4660
+4213,"Pawnbrokers and Money-lenders","4 - Clerical support workers",5,0.4710,0.0770,0.4900
+4214,"Debt Collectors and Related Workers","4 - Clerical support workers",5,0.4520,0.0922,0.4000
+4221,"Travel Consultants and Clerks","4 - Clerical support workers",8,0.5175,0.0648,0.5625
+4222,"Contact Centre Information Clerks","4 - Clerical support workers",6,0.5050,0.0838,0.6167
+4223,"Telephone Switchboard Operators","4 - Clerical support workers",5,0.4844,0.1304,0.5900
+4224,"Hotel Receptionists","4 - Clerical support workers",9,0.4728,0.0582,0.5556
+4225,"Inquiry Clerks","4 - Clerical support workers",5,0.5520,0.0904,0.5960
+4226,"Receptionists (general)","4 - Clerical support workers",5,0.5200,0.1635,0.6100
+4227,"Survey and Market Research Interviewers","4 - Clerical support workers",5,0.5130,0.1280,0.5820
+4229,"Client Information Workers Not Elsewhere Classified","4 - Clerical support workers",6,0.4145,0.1199,0.4167
+4311,"Accounting and Bookkeeping Clerks","4 - Clerical support workers",5,0.5700,0.0938,0.7100
+4312,"Statistical, Finance and Insurance Clerks","4 - Clerical support workers",5,0.5890,0.0375,0.6900
+4313,"Payroll Clerks","4 - Clerical support workers",5,0.5170,0.0965,0.6960
+4321,"Stock Clerks","4 - Clerical support workers",5,0.3420,0.0886,0.3960
+4322,"Production Clerks","4 - Clerical support workers",5,0.4410,0.1078,0.4300
+4323,"Transport Clerks","4 - Clerical support workers",5,0.4580,0.0981,0.5167
+4411,"Library Clerks","4 - Clerical support workers",6,0.4208,0.1581,0.5000
+4412,"Mail Carriers and Sorting Clerks","4 - Clerical support workers",4,0.3375,0.0928,0.4250
+4413,"Coding, Proofreading and Related Clerks","4 - Clerical support workers",5,0.5070,0.1337,0.5220
+4414,"Scribes and Related Workers","4 - Clerical support workers",3,0.5500,0.0566,0.6167
+4415,"Filing and Copying Clerks","4 - Clerical support workers",5,0.4396,0.1538,0.3700
+4416,"Personnel Clerks","4 - Clerical support workers",7,0.5886,0.0888,0.6214
+4419,"Clerical Support Workers Not Elsewhere Classified","4 - Clerical support workers",4,0.5807,0.0072,0.6750
+5111,"Travel Attendants and Travel Stewards","5 - Service and sales workers",11,0.2177,0.1186,0.2127
+5112,"Transport Conductors","5 - Service and sales workers",10,0.2405,0.1379,0.2580
+5113,"Travel Guides","5 - Service and sales workers",9,0.3067,0.0850,0.3311
+5120,"Cooks","5 - Service and sales workers",7,0.1823,0.0790,0.1857
+5131,"Waiters","5 - Service and sales workers",7,0.2643,0.1310,0.2971
+5132,"Bartenders","5 - Service and sales workers",10,0.2720,0.1141,0.2500
+5141,"Hairdressers","5 - Service and sales workers",8,0.1713,0.1851,0.1750
+5142,"Beauticians and Related Workers","5 - Service and sales workers",8,0.1762,0.1681,0.1900
+5151,"Cleaning and Housekeeping Supervisors in Offices, Hotels and Other Establishments","5 - Service and sales workers",8,0.2090,0.0982,0.2313
+5152,"Domestic Housekeepers","5 - Service and sales workers",9,0.1900,0.1043,0.2089
+5153,"Building Caretakers","5 - Service and sales workers",8,0.2487,0.1233,0.2838
+5161,"Astrologers, Fortune-tellers and Related Workers","5 - Service and sales workers",6,0.3100,0.1691,0.2833
+5162,"Companions and Valets","5 - Service and sales workers",3,0.2257,0.0582,0.2100
+5163,"Undertakers and Embalmers","5 - Service and sales workers",6,0.1447,0.1418,0.1883
+5164,"Pet Groomers and Animal Care Workers","5 - Service and sales workers",9,0.1470,0.0852,0.1344
+5165,"Driving Instructors","5 - Service and sales workers",6,0.1833,0.0354,0.2267
+5169,"Personal Services Workers Not Elsewhere Classified","5 - Service and sales workers",3,0.2200,0.0779,0.2067
+5211,"Stall and Market Salespersons","5 - Service and sales workers",7,0.3036,0.1118,0.3829
+5212,"Street Food Salespersons","5 - Service and sales workers",5,0.2290,0.1163,0.2200
+5221,"Shopkeepers","5 - Service and sales workers",7,0.3964,0.0856,0.4514
+5222,"Shop Supervisors","5 - Service and sales workers",8,0.3081,0.1170,0.4125
+5223,"Shop Sales Assistants","5 - Service and sales workers",5,0.3450,0.1294,0.4220
+5230,"Cashiers and Ticket Clerks","5 - Service and sales workers",8,0.4056,0.1211,0.4037
+5241,"Fashion and Other Models","5 - Service and sales workers",5,0.2860,0.0750,0.2100
+5242,"Sales Demonstrators","5 - Service and sales workers",5,0.4110,0.0800,0.4160
+5243,"Door-to-door Salespersons","5 - Service and sales workers",7,0.4371,0.1538,0.5243
+5244,"Contact Centre Salespersons","5 - Service and sales workers",8,0.5731,0.1075,0.6500
+5245,"Service Station Attendants","5 - Service and sales workers",8,0.2387,0.1578,0.2425
+5246,"Food Service Counter Attendants","5 - Service and sales workers",8,0.2425,0.1237,0.2338
+5311,"Child Care Workers","5 - Service and sales workers",8,0.1847,0.0751,0.1963
+5312,"Teachers' Aides","5 - Service and sales workers",7,0.2421,0.1243,0.2400
+5321,"Health Care Assistants","5 - Service and sales workers",6,0.1383,0.0490,0.1433
+5322,"Home-based Personal Care Workers","5 - Service and sales workers",9,0.2508,0.1849,0.2422
+5329,"Personal Care Workers in Health Services Not Elsewhere Classified","5 - Service and sales workers",6,0.1642,0.0529,0.1367
+5411,"Fire Fighters","5 - Service and sales workers",6,0.1700,0.0711,0.1967
+5412,"Police Officers","5 - Service and sales workers",4,0.1613,0.0413,0.1175
+5413,"Prison Guards","5 - Service and sales workers",7,0.1307,0.0356,0.1443
+5414,"Security Guards","5 - Service and sales workers",6,0.2050,0.0858,0.2000
+5419,"Protective Services Workers Not Elsewhere Classified","5 - Service and sales workers",5,0.1925,0.0323,0.2020
+6111,"Field Crop and Vegetable Growers","6 - Skilled agricultural, forestry and fishery workers",11,0.1695,0.1276,0.1827
+6112,"Tree and Shrub Crop Growers","6 - Skilled agricultural, forestry and fishery workers",10,0.1675,0.1065,0.1827
+6113,"Gardeners, Horticultural and Nursery Growers","6 - Skilled agricultural, forestry and fishery workers",12,0.1783,0.1064,0.1900
+6114,"Mixed Crop Growers","6 - Skilled agricultural, forestry and fishery workers",11,0.1565,0.1125,0.1882
+6121,"Livestock and Dairy Producers","6 - Skilled agricultural, forestry and fishery workers",13,0.1592,0.1012,0.1808
+6122,"Poultry Producers","6 - Skilled agricultural, forestry and fishery workers",12,0.1792,0.0947,0.1992
+6123,"Apiarists and Sericulturists","6 - Skilled agricultural, forestry and fishery workers",7,0.2217,0.1011,0.2214
+6129,"Animal Producers Not Elsewhere Classified","6 - Skilled agricultural, forestry and fishery workers",9,0.1967,0.1244,0.2033
+6130,"Mixed Crop and Animal Producers","6 - Skilled agricultural, forestry and fishery workers",10,0.1800,0.1074,0.2000
+6210,"Forestry and Related Workers","6 - Skilled agricultural, forestry and fishery workers",10,0.1088,0.0559,0.1290
+6221,"Aquaculture Workers","6 - Skilled agricultural, forestry and fishery workers",10,0.2125,0.1314,0.2370
+6222,"Inland and Coastal Waters Fishery Workers","6 - Skilled agricultural, forestry and fishery workers",10,0.1695,0.0930,0.1800
+6223,"Deep-sea Fishery Workers","6 - Skilled agricultural, forestry and fishery workers",9,0.1788,0.0733,0.1722
+6224,"Hunters and Trappers","6 - Skilled agricultural, forestry and fishery workers",5,0.0835,0.0283,0.0960
+6310,"Subsistence Crop Farmers","6 - Skilled agricultural, forestry and fishery workers",7,0.1143,0.0459,0.1371
+6320,"Subsistence Livestock Farmers","6 - Skilled agricultural, forestry and fishery workers",12,0.1123,0.0361,0.1417
+6330,"Subsistence Mixed Crop and Livestock Farmers","6 - Skilled agricultural, forestry and fishery workers",9,0.1071,0.0363,0.1300
+6340,"Subsistence Fishers, Hunters, Trappers and Gatherers","6 - Skilled agricultural, forestry and fishery workers",8,0.1087,0.0509,0.1263
+7111,"House Builders","7 - Craft and related trades workers",7,0.1369,0.0676,0.1371
+7112,"Bricklayers and Related Workers","7 - Craft and related trades workers",3,0.0840,0.0014,0.0933
+7113,"Stonemasons, Stone Cutters, Splitters and Carvers","7 - Craft and related trades workers",7,0.1003,0.0204,0.1186
+7114,"Concrete Placers, Concrete Finishers and Related Workers","7 - Craft and related trades workers",5,0.0970,0.0169,0.1100
+7115,"Carpenters and Joiners","7 - Craft and related trades workers",5,0.1250,0.0217,0.1340
+7119,"Building Frame and Related Trades Workers Not Elsewhere Classified","7 - Craft and related trades workers",3,0.0907,0.0033,0.0967
+7121,"Roofers","7 - Craft and related trades workers",6,0.1242,0.0703,0.1283
+7122,"Floor Layers and Tile Setters","7 - Craft and related trades workers",4,0.0938,0.0041,0.1100
+7123,"Plasterers","7 - Craft and related trades workers",7,0.1043,0.0188,0.1243
+7124,"Insulation Workers","7 - Craft and related trades workers",6,0.1275,0.0208,0.1267
+7125,"Glaziers","7 - Craft and related trades workers",4,0.1237,0.0074,0.1500
+7126,"Plumbers and Pipe Fitters","7 - Craft and related trades workers",5,0.1730,0.0742,0.1300
+7127,"Air Conditioning and Refrigeration Mechanics","7 - Craft and related trades workers",4,0.2112,0.0869,0.2025
+7131,"Painters and Related Workers","7 - Craft and related trades workers",5,0.1360,0.0503,0.1160
+7132,"Spray Painters and Varnishers","7 - Craft and related trades workers",3,0.1183,0.0024,0.1200
+7133,"Building Structure Cleaners","7 - Craft and related trades workers",3,0.1100,0.0071,0.0733
+7211,"Metal Moulders and Coremakers","7 - Craft and related trades workers",7,0.1403,0.0076,0.1271
+7212,"Welders and Flame Cutters","7 - Craft and related trades workers",8,0.1431,0.0556,0.1175
+7213,"Sheet Metal Workers","7 - Craft and related trades workers",7,0.1957,0.0902,0.2171
+7214,"Structural Metal Preparers and Erectors","7 - Craft and related trades workers",6,0.1133,0.0172,0.1083
+7215,"Riggers and Cable Splicers","7 - Craft and related trades workers",6,0.1242,0.0228,0.1283
+7221,"Blacksmiths, Hammersmiths and Forging Press Workers","7 - Craft and related trades workers",7,0.1596,0.0472,0.1714
+7222,"Toolmakers and Related Workers","7 - Craft and related trades workers",11,0.1936,0.0965,0.2155
+7223,"Metal Working Machine Tool Setters and  Operators","7 - Craft and related trades workers",6,0.1883,0.0554,0.1750
+7224,"Metal Polishers, Wheel Grinders and Tool Sharpeners","7 - Craft and related trades workers",7,0.1686,0.0467,0.1686
+7231,"Motor Vehicle Mechanics and Repairers","7 - Craft and related trades workers",8,0.1822,0.0333,0.1737
+7232,"Aircraft Engine Mechanics and Repairers","7 - Craft and related trades workers",10,0.1908,0.0766,0.1990
+7233,"Agricultural and Industrial Machinery Mechanics and Repairers","7 - Craft and related trades workers",7,0.1864,0.0539,0.1614
+7234,"Bicycle and Related Repairers","7 - Craft and related trades workers",6,0.1225,0.0353,0.1400
+7311,"Precision-instrument Makers and Repairers","7 - Craft and related trades workers",12,0.2190,0.0707,0.2092
+7312,"Musical Instrument Makers and Tuners","7 - Craft and related trades workers",11,0.1352,0.0285,0.1455
+7313,"Jewellery and Precious Metal Workers","7 - Craft and related trades workers",11,0.1765,0.0567,0.1745
+7314,"Potters and Related Workers","7 - Craft and related trades workers",11,0.1823,0.0710,0.1736
+7315,"Glass Makers, Cutters, Grinders and Finishers","7 - Craft and related trades workers",13,0.1923,0.0575,0.1808
+7316,"Sign Writers, Decorative Painters, Engravers and Etchers","7 - Craft and related trades workers",14,0.1809,0.1146,0.1871
+7317,"Handicraft Workers in Wood, Basketry and Related Materials","7 - Craft and related trades workers",11,0.1339,0.0174,0.1373
+7318,"Handicraft Workers in Textile, Leather and Related Materials","7 - Craft and related trades workers",14,0.1257,0.0201,0.1407
+7321,"Pre-press Technicians","7 - Craft and related trades workers",7,0.3741,0.1930,0.3900
+7322,"Printers","7 - Craft and related trades workers",9,0.2456,0.0925,0.2533
+7323,"Print Finishing and Binding Workers","7 - Craft and related trades workers",7,0.2114,0.0942,0.2286
+7411,"Building and Related Electricians","7 - Craft and related trades workers",8,0.1663,0.0496,0.2162
+7412,"Electrical Mechanics and Fitters","7 - Craft and related trades workers",7,0.1804,0.0475,0.1686
+7413,"Electrical Line Installers and Repairers","7 - Craft and related trades workers",6,0.1542,0.0803,0.1533
+7421,"Electronics Mechanics and Servicers","7 - Craft and related trades workers",9,0.2428,0.0993,0.2522
+7422,"Information and Communications Technology Installers and Servicers","7 - Craft and related trades workers",7,0.2107,0.0971,0.2671
+7511,"Butchers, Fishmongers and Related Food Preparers","7 - Craft and related trades workers",8,0.1156,0.0339,0.1350
+7512,"Bakers, Pastry-cooks and Confectionery Makers","7 - Craft and related trades workers",8,0.1581,0.0780,0.1800
+7513,"Dairy Products Makers","7 - Craft and related trades workers",8,0.1925,0.1252,0.2375
+7514,"Fruit, Vegetable and Related Preservers","7 - Craft and related trades workers",5,0.1500,0.0501,0.1460
+7515,"Food and Beverage Tasters and Graders","7 - Craft and related trades workers",5,0.3090,0.0866,0.3020
+7516,"Tobacco Preparers and Tobacco Products Makers","7 - Craft and related trades workers",5,0.1750,0.0759,0.1120
+7521,"Wood Treaters","7 - Craft and related trades workers",8,0.2241,0.1229,0.2250
+7522,"Cabinet-makers and Related Workers","7 - Craft and related trades workers",6,0.1629,0.0753,0.1617
+7523,"Woodworking Machine Tool Setters and Operators","7 - Craft and related trades workers",6,0.1992,0.1043,0.2333
+7531,"Tailors, Dressmakers, Furriers and Hatters","7 - Craft and related trades workers",11,0.1427,0.0695,0.1491
+7532,"Garment and Related Patternmakers and Cutters","7 - Craft and related trades workers",12,0.1588,0.0535,0.1775
+7533,"Sewing, Embroidery and Related Workers","7 - Craft and related trades workers",12,0.1135,0.0170,0.1300
+7534,"Upholsterers and Related Workers","7 - Craft and related trades workers",12,0.1781,0.0961,0.1758
+7535,"Pelt Dressers, Tanners and Fellmongers","7 - Craft and related trades workers",13,0.1062,0.0299,0.1131
+7536,"Shoemakers and Related Workers","7 - Craft and related trades workers",13,0.1704,0.0640,0.1677
+7541,"Underwater Divers","7 - Craft and related trades workers",12,0.1394,0.0685,0.1733
+7542,"Shotfirers and Blasters","7 - Craft and related trades workers",11,0.1202,0.0440,0.1191
+7543,"Product Graders and Testers (except Foods and Beverages)","7 - Craft and related trades workers",9,0.2828,0.0572,0.3344
+7544,"Fumigators and Other Pest and Weed Controllers","7 - Craft and related trades workers",7,0.1379,0.0441,0.1286
+7549,"Craft and Related Workers not Elsewhere Classified","7 - Craft and related trades workers",2,0.1375,0.0125,0.1500
+8111,"Miners and Quarriers","8 - Plant and machine operators, and assemblers",9,0.1739,0.1063,0.1711
+8112,"Mineral and Stone Processing Plant Operators","8 - Plant and machine operators, and assemblers",10,0.2260,0.1068,0.1900
+8113,"Well Drillers and Borers and Related Workers","8 - Plant and machine operators, and assemblers",10,0.1880,0.1256,0.1870
+8114,"Cement, Stone and Other Mineral Products Machine Operators","8 - Plant and machine operators, and assemblers",10,0.2227,0.0891,0.2300
+8121,"Metal Processing Plant Operators","8 - Plant and machine operators, and assemblers",8,0.2750,0.0929,0.2550
+8122,"Metal Finishing, Plating and Coating Machine Operators","8 - Plant and machine operators, and assemblers",8,0.2034,0.0507,0.2062
+8131,"Chemical Products Plant and Machine Operators","8 - Plant and machine operators, and assemblers",6,0.2617,0.0706,0.2267
+8132,"Photographic Products Machine Operators","8 - Plant and machine operators, and assemblers",8,0.2831,0.0492,0.2600
+8141,"Rubber Products Machine Operators","8 - Plant and machine operators, and assemblers",6,0.1845,0.0288,0.1800
+8142,"Plastic Products Machine Operators","8 - Plant and machine operators, and assemblers",7,0.1786,0.0436,0.1714
+8143,"Paper Products Machine Operators","8 - Plant and machine operators, and assemblers",3,0.1917,0.0201,0.1700
+8151,"Fibre Preparing, Spinning and Winding Machine Operators","8 - Plant and machine operators, and assemblers",12,0.1616,0.0228,0.1483
+8152,"Weaving and Knitting Machine Operators","8 - Plant and machine operators, and assemblers",13,0.1846,0.0411,0.1454
+8153,"Sewing Machine Operators","8 - Plant and machine operators, and assemblers",8,0.1506,0.0211,0.1450
+8154,"Bleaching, Dyeing and Fabric Cleaning Machine Operators","8 - Plant and machine operators, and assemblers",11,0.1850,0.0495,0.1958
+8155,"Fur and Leather Preparing Machine Operators","8 - Plant and machine operators, and assemblers",11,0.1529,0.0354,0.1391
+8156,"Shoemaking and Related Machine Operators","8 - Plant and machine operators, and assemblers",3,0.1650,0.0286,0.1600
+8157,"Laundry Machine Operators","8 - Plant and machine operators, and assemblers",9,0.1483,0.0233,0.1644
+8159,"Textile, Fur and Leather Products Machine Operators Not Elsewhere Classified","8 - Plant and machine operators, and assemblers",5,0.1650,0.0241,0.1500
+8160,"Food and Related Products Machine Operators","8 - Plant and machine operators, and assemblers",7,0.1693,0.0356,0.1371
+8171,"Pulp and Papermaking Plant Operators","8 - Plant and machine operators, and assemblers",8,0.2819,0.1173,0.2687
+8172,"Wood Processing Plant Operators","8 - Plant and machine operators, and assemblers",5,0.1280,0.0504,0.1600
+8181,"Glass and Ceramics Plant Operators","8 - Plant and machine operators, and assemblers",13,0.1755,0.0512,0.1715
+8182,"Steam Engine and Boiler Operators","8 - Plant and machine operators, and assemblers",7,0.2214,0.0552,0.1686
+8183,"Packing, Bottling and Labelling Machine Operators","8 - Plant and machine operators, and assemblers",3,0.2283,0.0581,0.2167
+8211,"Mechanical Machinery Assemblers","8 - Plant and machine operators, and assemblers",5,0.2430,0.1249,0.2960
+8212,"Electrical and Electronic Equipment Assemblers","8 - Plant and machine operators, and assemblers",5,0.2375,0.1255,0.3160
+8219,"Assemblers Not Elsewhere Classified","8 - Plant and machine operators, and assemblers",5,0.3020,0.1311,0.3360
+8311,"Locomotive Engine Drivers","8 - Plant and machine operators, and assemblers",5,0.1950,0.0631,0.2020
+8312,"Railway Brake, Signal and Switch Operators","8 - Plant and machine operators, and assemblers",5,0.1800,0.0369,0.1700
+8321,"Motorcycle Drivers","8 - Plant and machine operators, and assemblers",5,0.2375,0.1605,0.2620
+8322,"Car, Taxi and Van Drivers","8 - Plant and machine operators, and assemblers",8,0.2537,0.1983,0.3225
+8331,"Bus and Tram Drivers","8 - Plant and machine operators, and assemblers",7,0.1771,0.0611,0.1800
+8332,"Heavy Truck and Lorry Drivers","8 - Plant and machine operators, and assemblers",6,0.2467,0.2056,0.2433
+8341,"Mobile Farm and Forestry Plant Operators","8 - Plant and machine operators, and assemblers",8,0.1094,0.0291,0.1362
+8342,"Earthmoving and Related Plant Operators","8 - Plant and machine operators, and assemblers",7,0.1343,0.0178,0.1286
+8343,"Crane, hoist and related plant operators","8 - Plant and machine operators, and assemblers",7,0.1817,0.0356,0.1686
+8344,"Lifting Truck Operators","8 - Plant and machine operators, and assemblers",5,0.2060,0.0996,0.1900
+8350,"Ships' Deck Crews and Related Workers","8 - Plant and machine operators, and assemblers",6,0.1583,0.0485,0.1267
+9111,"Domestic Cleaners and Helpers","9 - Elementary occupations",7,0.1340,0.0571,0.1529
+9112,"Cleaners and Helpers in Offices, Hotels and Other Establishments","9 - Elementary occupations",4,0.1000,0.0226,0.1375
+9121,"Hand Launderers and Pressers","9 - Elementary occupations",4,0.1500,0.0187,0.1375
+9122,"Vehicle Cleaners","9 - Elementary occupations",6,0.0879,0.0089,0.0900
+9123,"Window Cleaners","9 - Elementary occupations",3,0.1127,0.0266,0.1100
+9129,"Other Cleaning Workers","9 - Elementary occupations",6,0.1158,0.0201,0.0883
+9211,"Crop Farm Labourers","9 - Elementary occupations",8,0.0829,0.0216,0.1000
+9212,"Livestock Farm Labourers","9 - Elementary occupations",10,0.1170,0.0277,0.1200
+9213,"Mixed Crop and Livestock Farm Labourers","9 - Elementary occupations",11,0.1091,0.0353,0.1164
+9214,"Garden and Horticultural Labourers","9 - Elementary occupations",9,0.1093,0.0279,0.1222
+9215,"Forestry Labourers","9 - Elementary occupations",8,0.0844,0.0198,0.1038
+9216,"Fishery and Aquaculture Labourers","9 - Elementary occupations",7,0.0911,0.0305,0.1300
+9311,"Mining and Quarrying Labourers","9 - Elementary occupations",7,0.1049,0.0210,0.1129
+9312,"Civil Engineering Labourers","9 - Elementary occupations",5,0.0920,0.0129,0.0940
+9313,"Building Construction Labourers","9 - Elementary occupations",6,0.0978,0.0145,0.0900
+9321,"Hand Packers","9 - Elementary occupations",3,0.1783,0.0024,0.2167
+9329,"Manufacturing Labourers Not Elsewhere Classified","9 - Elementary occupations",4,0.1225,0.0075,0.1175
+9331,"Hand and Pedal Vehicle Drivers","9 - Elementary occupations",5,0.1980,0.0668,0.2160
+9332,"Drivers of Animal-drawn Vehicles and Machinery","9 - Elementary occupations",9,0.1160,0.0761,0.1489
+9333,"Freight Handlers","9 - Elementary occupations",6,0.1350,0.0271,0.1467
+9334,"Shelf Fillers","9 - Elementary occupations",8,0.2094,0.0907,0.2000
+9411,"Fast Food Preparers","9 - Elementary occupations",9,0.1806,0.0486,0.1856
+9412,"Kitchen Helpers","9 - Elementary occupations",6,0.1142,0.0363,0.1450
+9510,"Street and Related Service Workers","9 - Elementary occupations",8,0.1800,0.0851,0.1775
+9520,"Street Vendors (excluding Food)","9 - Elementary occupations",5,0.1890,0.1008,0.2200
+9611,"Garbage and Recycling Collectors","9 - Elementary occupations",4,0.0988,0.0241,0.0850
+9612,"Refuse Sorters","9 - Elementary occupations",6,0.1792,0.1062,0.1833
+9613,"Sweepers and Related Labourers","9 - Elementary occupations",4,0.0912,0.0368,0.0975
+9621,"Messengers, Package Deliverers and Luggage Porters","9 - Elementary occupations",6,0.3600,0.1721,0.3800
+9622,"Odd Job Persons","9 - Elementary occupations",7,0.1146,0.0271,0.1057
+9623,"Meter Readers and Vending-machine Collectors","9 - Elementary occupations",7,0.3536,0.1772,0.3300
+9624,"Water and Firewood Collectors","9 - Elementary occupations",6,0.0917,0.0281,0.0867
+9629,"Elementary Workers Not Elsewhere Classified","9 - Elementary occupations",8,0.2969,0.1356,0.2875
