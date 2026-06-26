@@ -1,5 +1,33 @@
 # STATUS
 
+## 2026-06-26 (late+++++) — Public release: cleaned for GitHub + put live on the website
+Prepped the repo for public sharing (it backs an application). Added `.gitignore` (excludes the
+EUL LFS microdata `data/canaries/lfs/*.zip|dta`, `data/takeoff/raw/`, copyrighted PDFs/txt/xlsx in
+`reference/`, `dashboard/design-variants/`, scratch PNGs), `requirements.txt`, MIT `LICENSE` (+ data-terms
+note), a rewritten public `README.md` (findings, live link, reproduce steps, microdata note), `BUILD_LOG.md`
+(honest "how it was built with Claude Code", judgment-focused), and `data/canaries/lfs/README.md` (how to
+obtain the microdata). **Redacted the confidential UKDS username** from `STATUS.md` and
+`reference/ukds_inventory.md` BEFORE the first commit (never entered history); pulled the personal
+`EMAIL_methodology.md` out of the repo (gitignored). Committed clean on `main` (87 files, 816 KB, verified
+no microdata/PDF/secret in the tree). **Remote not yet created** — needs Parth's GitHub auth (see below).
+
+Website (`~/personal-website`, already pushed + live): copied the 4 dashboard pages to
+`ai-economic-indicators-uk/` so it serves at **parthgoyal.uk/ai-economic-indicators-uk/**; swapped the
+homepage "proud of" bullet from the polarization model to the dashboard; added BOTH the dashboard and the
+polarization model to the projects list; synced the Copy-for-LLM profile with a projects section. Pushed
+to Pages and verified live: homepage bullet present, dashboard + all 3 sub-pages HTTP 200, and a headless
+render of the production canaries page shows charts drawing correctly.
+
+**To finish (Parth, one-time GitHub login):**
+```
+cd ~/ai-economic-indicators-uk
+gh auth login
+gh repo create ai-economic-indicators-uk --public --source=. --remote=origin --push
+```
+That creates the repo and pushes; it also makes the two `github.com/ParthG60/ai-economic-indicators-uk`
+links (projects page + Copy-for-LLM) resolve. Also: rotate the UKDS password (it was typed in plaintext
+this session) and scrub `~/.claude` transcripts before sharing any agent logs.
+
 ## 2026-06-26 (late++++) — Reverted the CB toggle; fixed the colours themselves instead
 Parth rejected the dash/marker/hatch toggle ("not fatter lines and dashed boxes") — wanted the *colours*
 CB-friendly, not a redundant-encoding overlay. So: **fully removed** the `CB_JS` block, nav button,
