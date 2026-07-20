@@ -14,11 +14,11 @@ Scoped whether new data printed since the 26 Jun build and refreshed what's live
 - **Web-checked the hand-curated adoption series:**
   - **BICS firm adoption** — already current. The DSIT AI adoption ad-hoc tables (pub. 15 Jan 2026) cover
     **waves 92–147 → Dec 2025 = 25%**, which is our last point. No newer AI module published yet.
-  - **OPN sentiment** — NOT updated (flagged for Parth). New ONS reading is **June 2026 = 36%** agree "AI will
-    benefit me" (3–28 Jun 2026; disagreement up to 27%, a record). But the same bulletin states **Aug 2025 = 38%**,
-    whereas our series has **41%** for that period — an anchor discrepancy (likely a different OPN table/framing).
-    Held rather than append over an inconsistency. **TODO:** verify the exact figure in the OPN AI dataset table,
-    reconcile the Aug-2025 point, then add Jun-2026.
+  - **OPN sentiment** — **updated to June 2026 = 36%**. Pulled the authoritative OPN AI dataset `Table_7`
+    (central "strongly agree or agree, all persons"): Aug 2025 = 41, Jun 2026 = 36. The apparent "Aug 2025 = 38"
+    discrepancy was a false alarm — 38 is the lower 95% CI bound; the point estimate is 41, which matches our
+    series. All 7 prior points verified exact against Table_7. Appended `2026-06=36` in `adoption_monitor.py`
+    (disagreement rose to 27%, a record; agreement drifting down from the Nov-2024 peak of 43).
 - No change (source not printed): GDP Q2 (out ~mid-Aug), labour productivity/capital share (still 2025 Q4),
   TFP/computer-services imports (annual, still 2024), job adverts (still May 2026), LFS microdata (2026 Q1,
   manual EUL). Committed locally (remote still not created).

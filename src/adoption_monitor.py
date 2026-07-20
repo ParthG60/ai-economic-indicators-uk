@@ -61,10 +61,10 @@ individual.to_csv(os.path.join(DATA,"individual_adoption.csv"), index=False)
 # ---------------------------------------------------------------- 2b. INDIVIDUAL SENTIMENT: ONS OPN
 # ONS Opinions and Lifestyle Survey (OPN) AI module measures attitudes, not usage: % of GB adults
 # who AGREE that AI will benefit them. A repeated official individual-level series (Table 7 trend).
-# Source: ONS "Public opinions and social trends, GB: artificial intelligence", Nov 2023-Aug 2025.
+# Source: ONS "Public opinions and social trends, GB: artificial intelligence", Nov 2023-Jun 2026.
 opn = pd.DataFrame({
-    "date":   ["2023-11","2024-01","2024-03","2024-06","2024-08","2024-11","2025-08"],
-    "agree_ai_benefits_me_pct": [38, 39, 38, 37, 39, 43, 41],
+    "date":   ["2023-11","2024-01","2024-03","2024-06","2024-08","2024-11","2025-08","2026-06"],
+    "agree_ai_benefits_me_pct": [38, 39, 38, 37, 39, 43, 41, 36],
 })
 opn.to_csv(os.path.join(DATA,"opn_individual_sentiment.csv"), index=False)
 
