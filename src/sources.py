@@ -88,7 +88,7 @@ ELEC_PAGE = "https://www.gov.uk/government/statistics/electricity-section-5-ener
 def electricity_consumption(since_year=1998):
     """Total UK electricity SUPPLIED (incl. net interconnector imports), annual, TWh — the demand
     met, regardless of whether generated here or imported. ET 5.1 'Annual' sheet is transposed
-    (years across columns, fuel rows down). The total is Table 5c 'electricity supplied by fuel'
+    (years across columns, fuel rows down). The total is Table 5.1c 'electricity supplied by fuel'
     -> 'All generating companies / Total all generating companies' (already in TWh)."""
     import re
     html = __import__("requests").get(ELEC_PAGE, headers={"User-Agent": "uk-aiei/0.1"}, timeout=60).text
@@ -101,7 +101,7 @@ def electricity_consumption(since_year=1998):
     def yr(c):
         try: v = int(str(c).strip()); return v if 1900 < v < 2100 else None
         except (TypeError, ValueError): return None
-    i5b = next(i for i, r in enumerate(rows) if isinstance(r[0], str) and r[0].strip().lower().startswith("table 5c"))
+    i5b = next(i for i, r in enumerate(rows) if isinstance(r[0], str) and "electricity supplied by fuel" in r[0].strip().lower())
     i_tot = next(i for i in range(i5b, len(rows))
                  if len(rows[i]) > 1 and isinstance(rows[i][1], str) and "total all generating companies" in rows[i][1].lower())
     i_hdr = max(i for i in range(0, i_tot) if sum(1 for c in rows[i] if yr(c)) >= 5)  # nearest year header above

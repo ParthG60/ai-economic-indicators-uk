@@ -1,5 +1,28 @@
 # STATUS
 
+## 2026-07-20 — Data-freshness scout + refresh (fixed DESNZ parser, +2026 Q1 investment)
+Scoped whether new data printed since the 26 Jun build and refreshed what's live.
+- **Fixed the electricity (DESNZ ET 5.1) parser.** It had been failing silently and falling back to a
+  degraded 5-point stub (lost 1999–2019 history, flipped 2024 to −1.67% `live=False`). Cause: DESNZ renamed
+  the heading "Table 5c" → **"Table 5.1c: electricity supplied by fuel (TWh)"** (file `ET_5.1_JUN_26.xlsx`).
+  Changed `sources.electricity_consumption()` to match the stable text `"electricity supplied by fuel"`.
+  Live again: full 1998→2024, 2024 = +0.09% YoY, `live=True`.
+- **New live data applied (re-ran takeoff_tracker):** IPP investment share gained **2026 Q1 = 26.56%**
+  (still mild); Info & Comms investment share gained **2026 Q1 = 11.37%** (neutral); 10y real yield Q2
+  quarter-end finalised **1.55% → 1.72%**. Verdict unchanged: **1 strong · 1 mild · 7 neutral** (no takeoff).
+  Rebuilt `dashboard/transformation.html` (reverted spurious Plotly-div-id churn on the other pages).
+- **Web-checked the hand-curated adoption series:**
+  - **BICS firm adoption** — already current. The DSIT AI adoption ad-hoc tables (pub. 15 Jan 2026) cover
+    **waves 92–147 → Dec 2025 = 25%**, which is our last point. No newer AI module published yet.
+  - **OPN sentiment** — NOT updated (flagged for Parth). New ONS reading is **June 2026 = 36%** agree "AI will
+    benefit me" (3–28 Jun 2026; disagreement up to 27%, a record). But the same bulletin states **Aug 2025 = 38%**,
+    whereas our series has **41%** for that period — an anchor discrepancy (likely a different OPN table/framing).
+    Held rather than append over an inconsistency. **TODO:** verify the exact figure in the OPN AI dataset table,
+    reconcile the Aug-2025 point, then add Jun-2026.
+- No change (source not printed): GDP Q2 (out ~mid-Aug), labour productivity/capital share (still 2025 Q4),
+  TFP/computer-services imports (annual, still 2024), job adverts (still May 2026), LFS microdata (2026 Q1,
+  manual EUL). Committed locally (remote still not created).
+
 ## 2026-06-26 (late+++++) — Public release: cleaned for GitHub + put live on the website
 Prepped the repo for public sharing (it backs an application). Added `.gitignore` (excludes the
 EUL LFS microdata `data/canaries/lfs/*.zip|dta`, `data/takeoff/raw/`, copyrighted PDFs/txt/xlsx in
