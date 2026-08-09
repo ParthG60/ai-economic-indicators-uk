@@ -86,7 +86,7 @@ xc = pd.read_csv(D("adoption", "crosscountry_firm_adoption.csv"))
 ukr = xc[xc.country == "United Kingdom"].iloc[0]
 
 adoption_cards = "".join([
-    card("UK firms using AI", f"{bics.headline_all_pct.iloc[-1]:.0f}%", f"ONS BICS · from {bics.headline_all_pct.iloc[0]:.0f}% (Sep-23)", BLUE),
+    card("UK firms using AI", f"{bics.firm_10plus_pct.iloc[-1]:.0f}%", f"ONS BICS, 10+ employees · from {bics.firm_10plus_pct.iloc[0]:.0f}% (Sep-23)", BLUE),
     card("UK adults using AI", f"{ind.ofcom_adults_used_ai_pct.dropna().iloc[-1]:.0f}%", f"Ofcom · from {ind.ofcom_adults_used_ai_pct.dropna().iloc[0]:.0f}% (2023)", ACCENT),
     card("Adults: “AI will benefit me”", f"{opn.agree_ai_benefits_me_pct.iloc[-1]:.0f}%", f"ONS OPN sentiment · from {opn.agree_ai_benefits_me_pct.iloc[0]:.0f}% (Nov-23)", ORANGE),
     card("Large firms (250+)", f"{bics.headline_250plus_pct.dropna().iloc[-1]:.0f}%", "ONS BICS · latest", BLUE),
@@ -94,7 +94,9 @@ adoption_cards = "".join([
 ])
 
 f1 = go.Figure()
-f1.add_scatter(x=bics.d, y=bics.headline_all_pct, name="All firms (BICS)", line=dict(color=BLUE, width=2.8), hovertemplate="%{y:.0f}%")
+f1.add_scatter(x=bics.d, y=bics.firm_10plus_pct, name="All firms, 10+ employees (BICS)", line=dict(color=BLUE, width=2.8), hovertemplate="%{y:.1f}%")
+ba = bics.dropna(subset=["headline_all_pct"])
+f1.add_scatter(x=ba.d, y=ba.headline_all_pct, name="All businesses, incl. micro (to 2025)", line=dict(color="#c3ccd4", width=1.6), hovertemplate="%{y:.0f}%")
 f1.add_scatter(x=bics.d, y=bics.adhoc_using_pct, name="Consistent definition (DSIT)", line=dict(color="#8aa0ad", width=1.8, dash="dash"), hovertemplate="%{y:.1f}%")
 b2 = bics.dropna(subset=["headline_250plus_pct"])
 f1.add_scatter(x=b2.d, y=b2.headline_250plus_pct, name="Large firms (250+)", mode="lines+markers", line=dict(color=ORANGE, width=2, dash="dot"), hovertemplate="%{y:.0f}%")
@@ -410,7 +412,7 @@ def page(slug, title, active, body):
     return slug
 
 # ---- home ---------------------------------------------------------------------------------------
-firms_now = bics.headline_all_pct.iloc[-1]; adults_now = ind.ofcom_adults_used_ai_pct.dropna().iloc[-1]
+firms_now = bics.firm_10plus_pct.iloc[-1]; adults_now = ind.ofcom_adults_used_ai_pct.dropna().iloc[-1]
 n_strong, n_mild = int(n.get("strong", 0)), int(n.get("mild", 0))
 home_cards = "".join([
     (f"<a class='home-card' href='adoption.html'><div class='hn'>01</div><h3>Adoption</h3>"
@@ -443,8 +445,9 @@ adoption_method = (
     "<p>This track asks a simple question: how many UK firms and people actually use AI, and how do people feel about it.</p>"
     "<h4>Where the numbers come from</h4>"
     "<p><b>Firms.</b> The ONS Business Insights and Conditions Survey, a regular survey of UK businesses. The headline "
-    "line counts firms that say they currently use AI. A second line, published by DSIT from the same survey on a "
-    "consistent definition, runs a few points higher and is smoother.</p>"
+    "line counts firms with 10 or more employees that say they currently use AI — the basis ONS now leads with, running "
+    "to June 2026. A faint line shows the older all-business cut (including firms under 10 staff), which ONS stopped "
+    "featuring after 2025; a third line, published by DSIT on a consistent definition, ran to Dec 2025.</p>"
     "<p><b>People.</b> Ofcom's Online Nation and Adults' Media Use surveys, for whether adults have used a generative-AI "
     "tool. Sentiment comes from the ONS Opinions and Lifestyle Survey, which asks whether people think AI will benefit them.</p>"
     "<p><b>Other countries.</b> Firm adoption across countries is from Yotzov and co-authors (2026); the UK figure there "
@@ -454,8 +457,8 @@ adoption_method = (
     "past rather than reading across the lines. Survey questions also vary, which is why the levels differ.</p></div>")
 adoption_body = (
     "<div class='pagehead'><p class='eyebrow'>01 &middot; Adoption</p><h1>Who is using AI</h1>"
-    "<p class='lede'>AI use is climbing on every measure. UK firm adoption has gone from roughly a tenth of businesses "
-    "in 2023 to about a quarter now, and just over half of adults say they have used an AI tool.</p></div>"
+    "<p class='lede'>AI use is climbing on every measure. Among UK businesses with 10 or more employees, adoption has gone "
+    "from roughly a tenth in 2023 to over a third by June 2026, and just over half of adults say they have used an AI tool.</p></div>"
     f"<div class='cards'>{adoption_cards}</div>"
     f"<div class='grid2'>{adoption_charts}</div>"
     f"{adoption_method}")

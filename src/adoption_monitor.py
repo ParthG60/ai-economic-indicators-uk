@@ -21,17 +21,22 @@ os.makedirs(DATA, exist_ok=True); os.makedirs(CHARTS, exist_ok=True)
 plt.rcParams.update({"figure.dpi": 130, "font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
 
 # ---------------------------------------------------------------- 1. FIRM SPINE: ONS BICS
-# Headline bulletin series (% of all UK businesses currently using AI) and the DSIT ad-hoc
-# series (same question, DSIT-filtered denominator, runs ~5-8pp higher but smoother).
-# Source: ONS "Business insights and impact on the UK economy" bulletins + BICS AI ad-hoc
-# tables (waves 92-147). https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/bulletins/businessinsightsandimpactontheukeconomy
+# Firm spine (% currently using >=1 AI technology). PRIMARY = ONS BICS headline on the
+# 10+ EMPLOYEES basis, which ONS's "AI in UK businesses: 2023 to 2026" article (pub 20 Jul
+# 2026) has made its canonical cut and runs to wave 159 / June 2026. Retained as HISTORICAL:
+# the all-business bulletin headline (headline_all_pct, ONS stopped featuring it for 2026 —
+# it only confirmed 25% all-business at Dec 2025) and the DSIT ad-hoc consistent-definition
+# series (waves 92-147 only; no newer ad-hoc release). None = not published on that basis.
+# Sources: ONS "AI in UK businesses: 2023 to 2026" (Figure 1) + BICS bulletins + DSIT AI ad-hoc
+# tables (waves 92-147). https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/artificialintelligenceinukbusinesses/2023to2026
 bics = pd.DataFrame({
-    "date":      ["2023-09","2023-12","2024-03","2024-06","2024-09","2024-12","2025-03","2025-06","2025-09","2025-12"],
-    "wave":      [92,98,105,111,117,123,129,135,141,147],
-    "headline_all_pct":  [9,10,14,13,15,16,18,20,23,25],          # ONS bulletin headline
-    "headline_250plus_pct":[18,None,24,25,30,28,31,None,None,44], # large firms (250+)
-    "adhoc_using_pct":   [16.3,15.4,21.0,19.8,21.4,23.9,25.3,27.3,31.5,32.6],   # DSIT ad-hoc
-    "adhoc_planning_pct":[18.9,17.0,20.6,19.1,19.7,20.6,23.4,25.6,25.6,29.5],
+    "date":      ["2023-09","2023-12","2024-03","2024-06","2024-09","2024-12","2025-03","2025-06","2025-09","2025-12","2026-03","2026-06"],
+    "wave":      [92,98,105,111,117,123,129,135,141,147,153,159],
+    "firm_10plus_pct":   [11.9,11.8,13.8,14.8,17.8,18.2,20.6,25.1,27.2,28.7,32.1,34.9], # ONS BICS headline, 10+ employees (canonical, to Jun-2026)
+    "headline_all_pct":  [9,10,14,13,15,16,18,20,23,25,None,None],          # ONS bulletin headline, ALL businesses (historical; not published for 2026)
+    "headline_250plus_pct":[18,None,24,25,30,28,31,None,None,44,None,None], # large firms (250+)
+    "adhoc_using_pct":   [16.3,15.4,21.0,19.8,21.4,23.9,25.3,27.3,31.5,32.6,None,None],   # DSIT ad-hoc, consistent definition (waves 92-147 only)
+    "adhoc_planning_pct":[18.9,17.0,20.6,19.1,19.7,20.6,23.4,25.6,25.6,29.5,None,None],
 })
 bics.to_csv(os.path.join(DATA,"bics_firm_adoption.csv"), index=False)
 

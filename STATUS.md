@@ -1,6 +1,6 @@
 # STATUS
 
-## 2026-08-09 — Data-freshness refresh (real yield Q3 + adverts to Jun 2026; everything else current)
+## 2026-08-09 — Data-freshness refresh (firm adoption → Jun 2026 on new 10+ basis; real yield Q3; adverts → Jun 2026)
 Re-ran `run_all.py` (live pulls) and web-checked the hand-curated series. What moved:
 - **10y real yield gained 2026 Q3 = 1.88%** (spot curve, quarter-end 2026-09-30; was 1.72% at Q2).
   z 0.55→0.66, still **neutral**. Auto-fetched from BoE.
@@ -16,11 +16,24 @@ Re-ran `run_all.py` (live pulls) and web-checked the hand-curated series. What m
 - **Verdict unchanged: 1 strong · 1 mild · 7 neutral.** Adoption headline unchanged (firms 25%,
   adults 54%, sentiment 36%). Reverted spurious Plotly-UUID-only churn on adoption.html.
 
+- **FIRM ADOPTION UPDATED to June 2026 (Parth caught this — I'd first called it current, wrongly).**
+  ONS's article **"AI in UK businesses: 2023 to 2026" (pub 20 Jul 2026)** has made the **10+ employees**
+  basis its canonical headline, with a clean quarterly series to **wave 159 / June 2026 = 34.9%**
+  (11.9% Sep-23 → 28.7% Dec-25 → 32.1% Mar-26 → 34.9% Jun-26; from Figure 1 CSV). Our old spine was
+  the **all-business** basis (9%→25%), which ONS only confirmed at Dec 2025 and no longer publishes for
+  2026. **Decision (Parth): adopt the 10+ employee series as the firm spine.** Added `firm_10plus_pct`
+  to the bics frame (12 waves); made it the "UK firms using AI" card (now **35%**, "10+ employees") and
+  the primary chart line (runs to Jun-26). Kept all-business (9→25, faint "incl. micro" line, to 2025)
+  and the DSIT ad-hoc consistent-definition line (32.6, to Dec-25) as historical. No newer DSIT sectoral
+  ad-hoc tables exist (still waves 92–147), so the sector chart stays at Dec 2025.
+
 Web-checked, confirmed **already current** (no newer print):
 - **OPN AI sentiment** — June 2026 = 36% is the latest (ONS release 17 Jul 2026, collected 3–28 Jun);
   already our last point.
-- **BICS/DSIT firm AI adoption** — still the wave 92–147 ad-hoc tables (Dec 2025 = 25%); no newer AI module.
 - **Ofcom adults** — annual, 54% (Nov 2025); next reading not due.
+- **All 9 auto-fetched macro series** — verified at ONS true-latest by querying the endpoints live:
+  GDP output 2026 Q1, productivity/labour-share 2025 Q4, GFCF (IPP/total/Info&Comms/business) 2026 Q1,
+  computer-svc & total imports 2024 (annual is the only granularity). Nothing stale.
 
 Not yet published (nothing to pull):
 - **GDP Q2 2026** — first estimate due ~mid-Aug; auto-fetch still shows Q1 2026 as latest output/productivity.
