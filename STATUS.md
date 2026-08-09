@@ -1,5 +1,37 @@
 # STATUS
 
+## 2026-08-09 — Data-freshness refresh (real yield Q3 + adverts to Jun 2026; everything else current)
+Re-ran `run_all.py` (live pulls) and web-checked the hand-curated series. What moved:
+- **10y real yield gained 2026 Q3 = 1.88%** (spot curve, quarter-end 2026-09-30; was 1.72% at Q2).
+  z 0.55→0.66, still **neutral**. Auto-fetched from BoE.
+- **Textkernel job adverts extended to 2026-06.** NB the June print is a **partial latest month** —
+  Q1 (least-exposed) count came in at ~95k vs its usual ~150k while Q5 is normal, so the raw June gap
+  is understated. The 12-month trailing smooth (`min_periods=12`) absorbs it (smoothed Q5−Q1 gap
+  −20.7→−19.6), same way it rides over the zeroed 2026-03 row. Left the pipeline as-is; it self-corrects
+  when June finalises next refresh. Adverts are the corroboration chart, not the headline.
+- **DESNZ electricity: minor historical revisions** (2023 YoY −0.10%→−0.32%, 2024 +0.09%→+0.06%);
+  latest still 2024, verdict unchanged (neutral).
+- **Advert-weight quintiles re-derived** off the new Textkernel data — 0 of 399 occupations changed
+  quintile (only the `size`/`cum_share` weight columns moved). No structural change.
+- **Verdict unchanged: 1 strong · 1 mild · 7 neutral.** Adoption headline unchanged (firms 25%,
+  adults 54%, sentiment 36%). Reverted spurious Plotly-UUID-only churn on adoption.html.
+
+Web-checked, confirmed **already current** (no newer print):
+- **OPN AI sentiment** — June 2026 = 36% is the latest (ONS release 17 Jul 2026, collected 3–28 Jun);
+  already our last point.
+- **BICS/DSIT firm AI adoption** — still the wave 92–147 ad-hoc tables (Dec 2025 = 25%); no newer AI module.
+- **Ofcom adults** — annual, 54% (Nov 2025); next reading not due.
+
+Not yet published (nothing to pull):
+- **GDP Q2 2026** — first estimate due ~mid-Aug; auto-fetch still shows Q1 2026 as latest output/productivity.
+  Re-run after it lands (~15 Aug) to advance output_growth + labour productivity + capital share.
+- **LFS Q2 2026 microdata (Apr–Jun)** — NOT on UKDS yet (EUL quarterly lag ~13 weeks → expect ~late Sept
+  2026). Repo LFS stays at 2026 Q1. This is the one that needs Parth's UKDS download when it appears
+  (next study number after the 2026 Q1 file); the age×exposure/hiring cuts advance only then.
+
+Copied the 2 changed pages (transformation, canaries) to `~/personal-website/ai-economic-indicators-uk/`.
+Committed both repos.
+
 ## 2026-07-20 — Data-freshness scout + refresh (fixed DESNZ parser, +2026 Q1 investment)
 Scoped whether new data printed since the 26 Jun build and refreshed what's live.
 - **Fixed the electricity (DESNZ ET 5.1) parser.** It had been failing silently and falling back to a
