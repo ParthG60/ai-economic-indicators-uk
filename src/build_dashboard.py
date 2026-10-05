@@ -8,9 +8,11 @@ see reference/DESIGN.md. Palette is colour-blind-safe (Okabe-Ito): dark blue vs 
 two-class pair, distinct in lightness as well as hue), never red-vs-green; hover labels stay readable.
 Run: python src/build_dashboard.py  ->  dashboard/index.html
 """
-import os, textwrap, pandas as pd, plotly.graph_objects as go, plotly.io as pio
+import os, textwrap, datetime, pandas as pd, plotly.graph_objects as go, plotly.io as pio
 from plotly.subplots import make_subplots
 from plotly.offline import get_plotlyjs_version
+
+BUILD_DATE = datetime.date.today().strftime("%d %B %Y")   # shown as the "data last refreshed" stamp
 
 # Multi-page site: each page is its own HTML file, so plotly.js loads once per page from a shared
 # CDN <script> in the head (not injected per-figure). Every figure therefore embeds no library.
@@ -84,6 +86,7 @@ opn = pd.read_csv(D("adoption", "opn_individual_sentiment.csv")); opn["d"] = pd.
 sec = pd.read_csv(D("adoption", "bics_firm_adoption_by_sector.csv"))
 xc = pd.read_csv(D("adoption", "crosscountry_firm_adoption.csv"))
 ukr = xc[xc.country == "United Kingdom"].iloc[0]
+firms_month = bics.d.iloc[-1].strftime("%B %Y")     # latest BICS wave, e.g. "June 2026"
 
 adoption_cards = "".join([
     card("UK firms using AI", f"{bics.firm_10plus_pct.iloc[-1]:.0f}%", f"ONS BICS, 10+ employees · from {bics.firm_10plus_pct.iloc[0]:.0f}% (Sep-23)", BLUE),
@@ -403,7 +406,8 @@ FOOT = ("<footer><div class='wrap' style='padding:0'>Built from public UK data: 
         "and Lifestyle Survey), Bank of England, the Department for Energy Security and Net Zero, and Ofcom. "
         "Occupational exposure from the ILO (2025); automation and augmentation shares from the Anthropic Economic "
         "Index; cross-country firm adoption from Yotzov and co-authors (2026). After the Stanford Digital Economy Lab. "
-        "Colours are colour-blind-safe. Charts are interactive: hover, zoom, and click the legend.</div></footer>")
+        "Colours are colour-blind-safe. Charts are interactive: hover, zoom, and click the legend. "
+        f"<span style='color:{ACCENT}'>Data last refreshed {BUILD_DATE}.</span></div></footer>")
 
 def page(slug, title, active, body):
     html = (f"<!doctype html><html lang='en'><head>{HEAD}<title>{title}</title></head><body>"
@@ -446,7 +450,7 @@ adoption_method = (
     "<h4>Where the numbers come from</h4>"
     "<p><b>Firms.</b> The ONS Business Insights and Conditions Survey, a regular survey of UK businesses. The headline "
     "line counts firms with 10 or more employees that say they currently use AI — the basis ONS now leads with, running "
-    "to June 2026. A faint line shows the older all-business cut (including firms under 10 staff), which ONS stopped "
+    f"to {firms_month}. A faint line shows the older all-business cut (including firms under 10 staff), which ONS stopped "
     "featuring after 2025; a third line, published by DSIT on a consistent definition, ran to Dec 2025.</p>"
     "<p><b>People.</b> Ofcom's Online Nation and Adults' Media Use surveys, for whether adults have used a generative-AI "
     "tool. Sentiment comes from the ONS Opinions and Lifestyle Survey, which asks whether people think AI will benefit them.</p>"
@@ -458,7 +462,7 @@ adoption_method = (
 adoption_body = (
     "<div class='pagehead'><p class='eyebrow'>01 &middot; Adoption</p><h1>Who is using AI</h1>"
     "<p class='lede'>AI use is climbing on every measure. Among UK businesses with 10 or more employees, adoption has gone "
-    "from roughly a tenth in 2023 to over a third by June 2026, and just over half of adults say they have used an AI tool.</p></div>"
+    f"from roughly a tenth in 2023 to over a third by {firms_month}, and just over half of adults say they have used an AI tool.</p></div>"
     f"<div class='cards'>{adoption_cards}</div>"
     f"<div class='grid2'>{adoption_charts}</div>"
     f"{adoption_method}")
@@ -476,18 +480,27 @@ trans_method = (
     "four levels are strong, mild, neutral, and contradictory. This is a test against history, not a forecast.</p>"
     "<h4>The series and their sources</h4>"
     "<p>Output, productivity, the labour and capital shares, trade and investment come from the ONS; the real interest "
-    "rate from the Bank of England; electricity from DESNZ. Three of the nine are annual official statistics whose "
-    "latest complete year is 2024 (computer-services imports, multifactor productivity, and electricity); the rest run "
-    "to late 2025 or early 2026. The 2025 annual figures are not published yet.</p>"
+    "rate from the Bank of England; electricity from DESNZ. Two of the nine are annual official statistics whose "
+    "latest complete year is 2024 (multifactor productivity and electricity); computer-services imports now runs to "
+    "2025, and the rest run to late 2025 or early 2026.</p>"
     "<h4>Why it is tuned for the UK</h4>"
     "<p>The UK buys AI more than it builds it, so the clearest signal is computer-services imports, the cloud and "
     "compute bought from abroad. Domestic-capital measures are weaker here than in the US, because the hardware is "
     "imported, so we read them with that in mind.</p></div>")
+_nw = {0: "No", 1: "One", 2: "Two", 3: "Three", 4: "Four"}
+strong_lede = (
+    f"{_nw.get(n_strong, n_strong)} strong signal{'s' if n_strong != 1 else ''} "
+    f"{'points' if n_strong == 1 else 'point'} the same way, "
+    + ("both on the input side: the money the UK spends importing cloud and compute, and business "
+       "investment in software and R&amp;D."
+       if n_strong == 2 else
+       "on the input side: imported cloud and compute, and business investment in software and R&amp;D.")
+) if n_strong else "No indicator yet shows strong evidence of takeoff."
 trans_body = (
     "<div class='pagehead'><p class='eyebrow'>02 &middot; Transformation</p><h1>Is AI driving explosive growth yet</h1>"
     f"<p class='verdict'>Verdict: {verdict}.</p>"
-    "<p class='lede'>No clear sign of takeoff, which matches what Stanford finds for the US. The one strong signal is "
-    "the money the UK spends importing cloud and compute. Core output and productivity look ordinary.</p></div>"
+    f"<p class='lede'>No clear sign of takeoff, which matches what Stanford finds for the US. {strong_lede} "
+    "Core output and productivity look ordinary.</p></div>"
     f"{score_legend}"
     "<p class='sub'>The grid reads left to right by year, from 2022 onward. Hover any cell for that year's value and "
     "its evidence level; the charts below show each indicator against its pre-AI average.</p>"

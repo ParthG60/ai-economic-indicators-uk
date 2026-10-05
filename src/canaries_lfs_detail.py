@@ -33,6 +33,10 @@ def idx_series(sub):
 
 def main():
     d = load()
+    if d.empty:
+        print("No LFS microdata in data/canaries/lfs/ (EUL files are local-only). "
+              "Skipping — committed aggregate CSVs are kept.")
+        return
     titles = (pd.read_csv(os.path.join(ROOT, "reference", "soc2020_isco08_crosswalk.csv"))
               .drop_duplicates("SOC2020").set_index("SOC2020")["SOC2020_title"])
     expo = pd.read_csv(os.path.join(OUT, "occupation_exposure_quintiles.csv")).rename(

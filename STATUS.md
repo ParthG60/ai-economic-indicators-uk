@@ -1,4 +1,66 @@
 # STATUS
+## 2026-10-05 — Automated monthly refresh
+Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages (8/8 steps ok). Audit table in `data/refresh_status.csv`.
+
+
+## 2026-10-05 — Data-freshness refresh: Blue Book 2026 revisions, imports advanced to 2025, verdict 2 strong
+Re-ran the live trackers and audited every source. **Verdict moves from 1 strong · 1 mild · 7 neutral to
+2 strong · 1 mild · 6 neutral** — both new strong signals are on the *input* side, none on output.
+- **Computer-services imports ADVANCED to 2025 = 1.28% of total imports** (z 2.32→2.44, still **strong**).
+  The Pink Book CDID `FJDL` only prints to 2024 and the Pink Book 2026 isn't out until 31 Oct, but ONS's
+  granular **"UK trade in services: service type by partner country"** dataset runs a year ahead on the
+  same NSA basis (values match FJDL exactly on the overlap). Added `sources.computer_services_imports()`
+  and spliced it onto FJDL in `takeoff_tracker.py`. Also **switched the denominator** (`KTMX`, total
+  goods & services imports) from the old Blue Book `bb` to the current-vintage `ukea`, which now runs to
+  2025 (annual: 2024 = 903,450 → 2025 = 952,654). Numerator 2025 = £12,201m (+8.6% YoY); Q1 2026 alone
+  hit £3,803m (1.56% spot). Note the `ukea` denominator revises the historical share slightly (2024
+  1.22%→1.24%) — expected on a Blue Book vintage change.
+- **IPP (software + R&D) investment share → STRONG**: 2026 Q2 4q-avg = **28.0% of GFCF** (was 26.6% at
+  2026 Q1; z 1.67→2.06). Where AI capex lands. Big Q2 print (£41,453m IPP vs £149,500m total GFCF).
+- **Info & Comms sector investment share → MILD**: 2026 Q2 4q-avg = **14.3%** of business investment
+  (was 11.4%; z −0.15→1.56). The "building" tripwire has finally tripped — Q2 Info&Comms investment
+  jumped to £12,851m. Watch: one quarter, and the sector is broad (telecoms + software + hosting), so
+  not datacentre-specific yet.
+- **10y real yield finalised 2026 Q3 = 2.00%** (quarter-end 30 Sep; was the 1.88% intra-quarter print
+  recorded on 9 Aug). z 0.66→0.73, still neutral.
+- **GDP Q2 2026** gained: output growth +1.05% YoY (was +1.2% at Q1), neutral. Labour productivity
+  (2026 Q1) +0.08% YoY, capital share 40.3%, both neutral.
+- **Electricity** re-pulled off `ET_5.1_SEP_26.xlsx`: 2024 YoY +0.06% (was +0.09%), neutral.
+- **TFP confirmed stuck at 2024** (audited, not just assumed). ONS has **cancelled/postponed the Annual
+  multi-factor productivity 2025 release** ("due to LFS reweighting … until we are able to publish using
+  the LFS reweighted data"); the quarterly growth-accounting file also ends 2024 Q4. No newer MFP exists
+  anywhere. 2024 = −0.56% YoY, neutral.
+- **Canaries adverts extended to 2026-08** (Textkernel file `…170926.xlsx`, pub 17 Sep). June finalised;
+  gap stable: Q5 −61.2% vs Q1 −40.9% vs Oct-2022 base, **Q5−Q1 = −20.2 pts**. Demand-side penalty
+  persists.
+
+**Not yet published (nothing to pull):**
+- **BICS AI module** — repo on Wave 164; AI question runs ~every 6 waves (…147, 153, 159), so the next
+  reading is **Wave 165** (late Sep/Oct 2026). Firm spine stays Jun-2026 = 34.9% (10+ employees).
+- **OPN AI sentiment** — June 2026 = 36% remains latest (pub 17 Jul).
+- **Ofcom adults** — annual, 54% (Nov 2025); next reading not due.
+- **LFS Q2 2026 microdata** (Apr–Jun, `lfsp_aj26`) — not on UKDS yet; labour cuts stay pinned to 2026 Q1
+  until Parth downloads it.
+- **Pink Book 2026** — due 31 Oct 2026; will refresh FJDL (but our service-type splice already covers it).
+
+Rebuilt all 4 dashboard pages (transformation lede now says "two strong signals"), copied to
+`~/personal-website/ai-economic-indicators-uk/`, updated README findings. Not yet committed/pushed.
+
+## 2026-08-09 — APS microdata assessed for canaries (verdict: hold)
+Parth downloaded UKDS study **9587 = APS person file** (`apsp_a25m26_eul_pwta22.dta`, pooled 12mo to
+early 2026) into `data/canaries/annual population survey/`. Evaluated whether it improves the canaries.
+- **Sample:** 186,518 persons / **85,203 employed** — ≈**2×** a single quarterly LFS (`lfsh_jm26`: 82,882 / 41,597).
+  Has AGE, ILODEFR, EMPLEN, **HIQUL22D/15D** (quals), NSECMJ20 (NS-SEC), GOVTOF (region), PWTA22.
+- **Catch:** APS EUL caps occupation at **3-digit SOC2020** (104 minor groups) vs LFS 4-digit (412 unit groups),
+  and our exposure quintiles are built at 4-digit. Collapsing our crosswalk to 3-digit **retains 93%** of the
+  Q5−Q1 exposure spread, 81% of Q5 workers stay Q5, 75% worker-weighted quintile agreement → 3-digit crosswalk
+  is defensible, only modestly blunter.
+- **Verdict:** helps for *cross-sections, not the trend*. It's a single annual snapshot so it can't extend the
+  employment-by-exposure time series (stays quarterly-LFS's job). Genuine adds (all one-point-in-time): NEW
+  **qual × exposure** (grad vs non-grad concentration — LFS quarterly too thin to power), sharper **age × exposure**
+  (young×Q5 cell ~314/qtr → ~600-700, SE −30%), plus region/NS-SEC × exposure.
+- **Decision: HOLD** — Parth chose not to build yet. File left in place. If revisited, build an exposure×qual×age
+  snapshot on a 3-digit crosswalk, labelled as a single 2025-26 cross-section.
 
 ## 2026-08-09 — Data-freshness refresh (firm adoption → Jun 2026 on new 10+ basis; real yield Q3; adverts → Jun 2026)
 Re-ran `run_all.py` (live pulls) and web-checked the hand-curated series. What moved:

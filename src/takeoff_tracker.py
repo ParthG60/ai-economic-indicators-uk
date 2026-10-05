@@ -100,8 +100,8 @@ def safe(path, cdid, ds, prefer="quarters"):
 gdp = safe("economy/grossdomesticproductgdp", "ABMI", "PN2")                              # GDP CVM SA £m (level)
 prod = safe("employmentandlabourmarket/peopleinwork/labourproductivity", "LZVB", "PRDY")  # output/hr index
 lshare = safe("employmentandlabourmarket/peopleinwork/labourproductivity", "FZLN", "UCST")# labour share %
-ict = safe("economy/nationalaccounts/balanceofpayments", "FJDL", "pb")                    # imports: computer services £m
-ict_tot = safe("economy/nationalaccounts/balanceofpayments", "KTMX", "bb")               # imports: total goods & services £m
+ict = safe("economy/nationalaccounts/balanceofpayments", "FJDL", "pb")                    # imports: computer services £m (Pink Book, annual)
+ict_tot = safe("economy/nationalaccounts/balanceofpayments", "KTMX", "ukea", prefer="years")  # imports: total goods & services £m (current vintage, to 2025)
 ipp_inv = safe("economy/grossdomesticproductgdp", "TLPK", "ukea")                         # GFCF: intellectual property products (software+R&D) £m CP SA
 tot_inv = safe("economy/grossdomesticproductgdp", "NPQS", "ukea")                         # GFCF: total asset £m CP SA
 ic_inv = safe("economy/grossdomesticproductgdp", "DS8D", "cxnv")                          # Info & Comms industry business investment £m CP SA
@@ -121,6 +121,17 @@ if prod is not None:
 
 # 3. Computer-services imports as a SHARE of total imports (UK-native: AI arrives as imported
 #    cloud/compute, so it deepens as a rising slice of the import basket, not domestic capital).
+#    The Pink Book (FJDL) lags a year, so splice on the granular service-type dataset, which runs
+#    ahead on the same NSA basis (identical on the overlap) — keeps the series on the latest year.
+ict_fresh = live(sources.computer_services_imports)
+if ict_fresh is not None and len(ict_fresh):
+    if ict is None:
+        ict = ict_fresh
+    else:
+        extra = ict_fresh[ict_fresh.date > ict.date.max()]
+        if len(extra):
+            ict = pd.concat([ict, extra], ignore_index=True)
+            print(f"  + computer-services imports advanced to {extra.date.max().year} via service-type dataset")
 if ict is not None and ict_tot is not None:
     m = clip(ict).merge(ict_tot[["date", "value"]], on="date", suffixes=("", "_tot"))
     sh = pd.DataFrame({"date": m.date, "value": m.value / m.value_tot * 100})

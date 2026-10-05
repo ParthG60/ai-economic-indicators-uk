@@ -6,6 +6,10 @@
 data/canaries/lfs/*.zip
 data/canaries/lfs/*.dta
 
+# APS (Annual Population Survey) person files — also UKDS EUL-protected
+data/canaries/annual population survey/
+**/*stata_*.zip
+
 # Large raw source downloads (re-fetchable by the scripts: ONS/BoE/DESNZ)
 data/takeoff/raw/
 

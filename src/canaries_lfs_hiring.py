@@ -66,7 +66,7 @@ def load():
         d["recent"] = d.emplen.isin(RECENT)
         d["date"] = pd.Timestamp(int("20" + m.group(2)), *QE[CAL[m.group(1)]])
         parts.append(d.dropna(subset=["quintile"])[["date", "quintile", "age", "wt", "recent"]])
-    return pd.concat(parts, ignore_index=True)
+    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
 
 
 def index_by_quintile(sub):
@@ -97,6 +97,10 @@ def build(d, brackets, recent_only, path, label):
 
 def main():
     d = load()
+    if d.empty:
+        print("No LFS microdata in data/canaries/lfs/ (EUL files are local-only). "
+              "Skipping — committed aggregate CSVs are kept.")
+        return
     print(f"Loaded {d.date.nunique()} quarters ({d.date.min():%Y-%m}..{d.date.max():%Y-%m}); "
           f"{len(d):,} employed records, {int(d.recent.sum()):,} recent hires")
     build(d, STOCK_BRACKETS, False, os.path.join(OUT, "canaries_lfs_stock.csv"), "STOCK (all employed)")

@@ -91,7 +91,7 @@ def load():
         d["wfh"] = (d.home == 1).astype(int)            # HOME==1 = mainly works from own home
         d["date"] = pd.Timestamp(int("20" + m.group(2)), *Q_END[CALENDAR_Q[m.group(1)]])
         parts.append(d.dropna(subset=["quintile"])[["date", "soc", "quintile", "aitype", "age", "wt", "wfh"]])
-    return pd.concat(parts, ignore_index=True)
+    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
 
 
 def index_by(d, key, lo, hi):
@@ -104,6 +104,10 @@ def index_by(d, key, lo, hi):
 
 def main():
     d = load()
+    if d.empty:
+        print("No LFS microdata in data/canaries/lfs/ (EUL files are local-only). "
+              "Skipping — committed aggregate CSVs are kept.")
+        return
     print(f"Loaded {d.date.nunique()} quarters, {len(d):,} employed person-records "
           f"({d.date.min():%Y-%m}..{d.date.max():%Y-%m})\n")
 

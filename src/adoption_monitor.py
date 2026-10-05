@@ -12,8 +12,19 @@ NOTE on denominators: firm-adoption sources measure DIFFERENT things (16% DSIT s
 71% NBER exec panel ... 75% BoE finance-only). They are kept as separate series on purpose.
 Do not chart them on one axis as if comparable.
 """
-import os, pandas as pd, matplotlib.pyplot as plt
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import pandas as pd, matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
+import sources
+
+def _live(fn):
+    """Best-effort live fetch; returns None (caller uses curated fallback) on any failure."""
+    try:
+        return fn()
+    except Exception as e:
+        print(f"  ! live fetch failed {getattr(fn, '__name__', fn)}: {e}")
+        return None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "adoption"); CHARTS = os.path.join(ROOT, "charts", "adoption")
@@ -38,6 +49,23 @@ bics = pd.DataFrame({
     "adhoc_using_pct":   [16.3,15.4,21.0,19.8,21.4,23.9,25.3,27.3,31.5,32.6,None,None],   # DSIT ad-hoc, consistent definition (waves 92-147 only)
     "adhoc_planning_pct":[18.9,17.0,20.6,19.1,19.7,20.6,23.4,25.6,25.6,29.5,None,None],
 })
+# Live overlay: the canonical 10+ employees spine, scraped from the current ONS article chart
+# series. New waves are appended; if the fetch fails the curated series above is kept as-is.
+bics_live = _live(sources.bics_firm_adoption)
+if bics_live is not None and len(bics_live):
+    for _, r in bics_live.iterrows():
+        hit = bics.date == r.date
+        if hit.any():
+            bics.loc[hit, "firm_10plus_pct"] = r.firm_10plus_pct
+        else:
+            bics = pd.concat([bics, pd.DataFrame([{
+                "date": r.date, "wave": None, "firm_10plus_pct": r.firm_10plus_pct,
+                "headline_all_pct": None, "headline_250plus_pct": None,
+                "adhoc_using_pct": None, "adhoc_planning_pct": None}])], ignore_index=True)
+    bics = bics.sort_values("date").reset_index(drop=True)
+    print(f"  BICS 10+ spine: LIVE (ONS article) — latest {bics.date.iloc[-1]} = {bics.firm_10plus_pct.iloc[-1]:.1f}%")
+else:
+    print("  BICS 10+ spine: curated fallback (live article unavailable)")
 bics.to_csv(os.path.join(DATA,"bics_firm_adoption.csv"), index=False)
 
 # BICS by sector (DSIT ad-hoc, % currently using AI)
@@ -71,6 +99,14 @@ opn = pd.DataFrame({
     "date":   ["2023-11","2024-01","2024-03","2024-06","2024-08","2024-11","2025-08","2026-06"],
     "agree_ai_benefits_me_pct": [38, 39, 38, 37, 39, 43, 41, 36],
 })
+# Live: the full OPN Table 7 trend, straight from the current ONS release (falls back to above).
+opn_live = _live(sources.opn_ai_sentiment)
+if opn_live is not None and len(opn_live):
+    opn = opn_live
+    print(f"  OPN sentiment: LIVE (ONS Table 7) — {len(opn)} points, latest "
+          f"{opn.date.iloc[-1]} = {opn.agree_ai_benefits_me_pct.iloc[-1]}%")
+else:
+    print("  OPN sentiment: curated fallback (live release unavailable)")
 opn.to_csv(os.path.join(DATA,"opn_individual_sentiment.csv"), index=False)
 
 # ---------------------------------------------------------------- 3. FINANCIAL SERVICES: BoE/FCA
@@ -91,6 +127,7 @@ xcountry = pd.DataFrame({
     "robotics_pct":[13,14,4,7],
 })
 xcountry.to_csv(os.path.join(DATA,"crosscountry_firm_adoption.csv"), index=False)
+print("  Curated (no auto-parsable feed): Ofcom adults, BoE/FCA financial services, Yotzov cross-country")
 
 # ================================================================ CHARTS
 def _x(dates): return pd.to_datetime([d+"-01" for d in dates])

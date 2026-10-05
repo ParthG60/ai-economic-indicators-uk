@@ -13,8 +13,8 @@ The dashboard is static HTML with interactive [Plotly](https://plotly.com/python
 
 ## What it finds
 
-- **Adoption is climbing on every measure.** UK firm adoption has gone from roughly a tenth of businesses in 2023 to about a quarter now; just over half of adults say they have used an AI tool.
-- **No clear sign of macro takeoff yet**, which matches what Stanford finds for the US. The one strong UK signal is the money spent importing cloud and compute. Core output and productivity look ordinary.
+- **Adoption is climbing on every measure.** UK firm adoption has gone from roughly a tenth of businesses in 2023 to about a third by mid-2026; just over half of adults say they have used an AI tool.
+- **No clear sign of macro takeoff yet**, which matches what Stanford finds for the US. Two strong signals point the same way, both on the input side: the money spent importing cloud and compute, and business investment in software and R&D. Core output and productivity look ordinary.
 - **Hiring of young workers into the most AI-exposed jobs has dropped sharply** since ChatGPT, while the total headcount in those jobs has moved far less. That gap points to the hiring gate rather than layoffs. The important caveat: those jobs are also the most home-workable, so an AI effect and a remote-work effect cannot be cleanly separated. Read it as a warning sign, not proof.
 
 The dashboard states these caveats in full on each page. This is descriptive measurement, not causal estimation.
