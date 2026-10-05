@@ -5,8 +5,8 @@
 8159,0.0907,65800.0,0.0043113809843435364,1,Construction operatives n.e.c.
 9119,0.0911,30700.0,0.005269812528292462,1,Fishing and other elementary agriculture occupations n.e.c.
 9222,0.0912,12600.0,0.0056631753118024444,1,Street cleaners
-8153,0.092,5700.0,0.005841125142437913,1,Rail construction and maintenance operatives
-8152,0.092,23200.0,0.006565412172392801,1,Road construction operatives
+8152,0.092,23200.0,0.0063874623417573325,1,Road construction operatives
+8153,0.092,5700.0,0.006565412172392801,1,Rail construction and maintenance operatives
 9121,0.092,34700.0,0.007648720790471879,1,Groundworkers
 5322,0.0938,50200.0,0.0092159280708053,1,Floorers and wall tilers
 9129,0.0978,122900.0,0.013052776173454256,1,Elementary construction occupations n.e.c.
@@ -17,28 +17,28 @@
 5321,0.1043,53300.0,0.030151569548725474,1,Plasterers
 9111,0.1091,31600.0,0.031138098434353684,1,Farm workers
 9221,0.1127,41300.0,0.032427454224747514,1,Window cleaners
-5311,0.1133,6800.0,0.03263974525076877,1,Steel erectors
-5235,0.1133,12600.0,0.03303310803427876,1,Boat and ship builders and repairers
+5235,0.1133,12600.0,0.032820817008257494,1,Boat and ship builders and repairers
+5311,0.1133,6800.0,0.03303310803427876,1,Steel erectors
 5419,0.1135,8200.0,0.03328910603624557,1,"Textiles, garments and related trades n.e.c."
-9263,0.1142,419900.0,0.046398076893058394,1,Kitchen and catering assistants
-9261,0.1142,53600.0,0.04807142968640245,1,Bar and catering supervisors
+9261,0.1142,53600.0,0.03496245882958962,1,Bar and catering supervisors
+9263,0.1142,419900.0,0.04807142968640245,1,Kitchen and catering assistants
 5431,0.1156,23700.0,0.0488113263506236,1,Butchers
 5433,0.1156,7600.0,0.0490485927914709,1,Fishmongers and poultry dressers
 5233,0.1183,13600.0,0.049473174843513414,1,Vehicle paint technicians
-9139,0.1225,43800.0,0.050840578805238595,1,Elementary process plant occupations n.e.c.
-9131,0.1225,26500.0,0.05166788942135086,1,Industrial cleaning process occupations
+9131,0.1225,26500.0,0.050300485459625684,1,Industrial cleaning process occupations
+9139,0.1225,43800.0,0.05166788942135086,1,Elementary process plant occupations n.e.c.
 5317,0.1237,33600.0,0.052716856844044147,1,"Glaziers, window fabricators and fitters"
-5314,0.1242,34100.0,0.0537814339010037,1,"Roofers, roof tilers and slaters"
-8151,0.1242,22800.0,0.05449323322354557,1,"Scaffolders, stagers and riggers"
+8151,0.1242,22800.0,0.053428656166586014,1,"Scaffolders, stagers and riggers"
+5314,0.1242,34100.0,0.05449323322354557,1,"Roofers, roof tilers and slaters"
 5316,0.125,197000.0,0.06064342912445561,1,Carpenters and joiners
 3413,0.1263,41900.0,0.06195151647596897,1,"Actors, entertainers and presenters"
 3314,0.1307,43200.0,0.06330018887657463,1,Prison service officers (below principal officer)
 8229,0.1343,66100.0,0.0653637825265754,1,Mobile machine drivers and operatives n.e.c.
 9252,0.135,435700.0,0.07896601782620233,1,Warehouse operatives
 8239,0.135,25700.0,0.07976835302748857,1,Other drivers and transport operatives n.e.c.
-8233,0.135,8400.0,0.08003059488316189,1,Air transport operatives
-9253,0.135,16800.0,0.08055507859450853,1,Delivery operatives
-9259,0.135,14400.0,0.08100463606137709,1,Elementary storage occupations n.e.c.
+9259,0.135,14400.0,0.08021791049435711,1,Elementary storage occupations n.e.c.
+9253,0.135,16800.0,0.08074239420570375,1,Delivery operatives
+8233,0.135,8400.0,0.08100463606137709,1,Air transport operatives
 9251,0.135,39400.0,0.08223467524155909,1,Elementary storage supervisors
 5323,0.136,92000.0,0.08510684794655261,1,Painters and decorators
 5319,0.1369,219900.0,0.09197196509685777,1,Construction and building trades n.e.c.
@@ -67,8 +67,8 @@
 3313,0.17,38800.0,0.1296661099230445,1,Fire service officers (watch manager and below)
 5412,0.1704,7700.0,0.12990649829074505,1,Footwear and leather working trades
 6221,0.1713,134000.0,0.13408988027410518,1,Hairdressers and barbers
-5315,0.173,144300.0,0.13859482072335044,1,Plumbers and heating and ventilating installers and repairers
-5214,0.173,11600.0,0.1389569642383279,1,Pipe fitters
+5214,0.173,11600.0,0.1344520237890826,1,Pipe fitters
+5315,0.173,144300.0,0.1389569642383279,1,Plumbers and heating and ventilating installers and repairers
 8132,0.1739,6400.0,0.13915676755693615,1,Mining and quarry workers and related operatives
 8119,0.1755,38700.0,0.14036495324914539,1,Process operatives n.e.c.
 6222,0.1762,92400.0,0.14324961366155192,1,Beauticians and related occupations
@@ -87,32 +87,32 @@
 8221,0.1817,12000.0,0.1692490204954498,1,Crane drivers
 8145,0.1822,5300.0,0.16941448261867226,1,"Tyre, exhaust and windscreen fitters"
 5231,0.1822,147900.0,0.17403181243463467,1,"Vehicle technicians, mechanics and electricians"
-5441,0.1823,7900.0,0.1742784446560417,1,"Glass and ceramics makers, decorators and finishers"
-5435,0.1823,63500.0,0.17626086820785788,1,Cooks
+5435,0.1823,63500.0,0.17601423598645083,1,Cooks
+5441,0.1823,7900.0,0.17626086820785788,1,"Glass and ceramics makers, decorators and finishers"
 8215,0.1833,40000.0,0.17750963894915942,1,Driving instructors
 3232,0.1847,69400.0,0.17967625618531757,1,Early education and childcare practitioners
-6111,0.1847,122300.0,0.18349437272684702,1,Early education and childcare assistants
-6117,0.1847,19900.0,0.18411563617064453,1,Playworkers
-6114,0.1847,60200.0,0.18599503613630333,1,Childminders
-6116,0.1847,20100.0,0.18662254343380735,1,Nannies and au pairs
+6117,0.1847,19900.0,0.18029751962911508,1,Playworkers
+6116,0.1847,20100.0,0.1809250269266191,1,Nannies and au pairs
+6114,0.1847,60200.0,0.1828044268922779,1,Childminders
+6111,0.1847,122300.0,0.18662254343380735,1,Early education and childcare assistants
 3213,0.186,30100.0,0.18756224341663674,1,Medical and dental technicians
 5223,0.1864,158100.0,0.19249800977163106,1,Metal working production and maintenance fitters and technicians
 5236,0.1864,13900.0,0.19293195760423335,1,Rail and rolling stock builders and repairers
-8120,0.1883,47500.0,0.1944148728595289,1,Metal working machine operatives
-5221,0.1883,25200.0,0.19520159842654886,1,Metal machining setters and setter-operators
+5221,0.1883,25200.0,0.1937186831712533,1,Metal machining setters and setter-operators
+8120,0.1883,47500.0,0.19520159842654886,1,Metal working machine operatives
 3214,0.1905,28500.0,0.1960913475797262,1,Complementary health associate professionals
 5234,0.1908,36000.0,0.1972152412468976,1,Aircraft maintenance and related trades
-3319,0.1925,111500.0,0.2006961896882756,2,Protective service associate professionals n.e.c.
-2259,0.1925,58900.0,0.2025350046048421,2,Other health professionals n.e.c.
-2229,0.1925,60800.0,0.20443313613162042,2,Therapy professionals n.e.c.
-2222,0.1925,48500.0,0.20594727065544854,2,Occupational therapists
-2256,0.1925,15400.0,0.20642804739084963,2,Podiatrists
-6311,0.1925,10600.0,0.20675897163729454,2,Police community support officers
+2256,0.1925,15400.0,0.1976960179822987,1,Podiatrists
+2229,0.1925,60800.0,0.199594149509077,1,Therapy professionals n.e.c.
+2259,0.1925,58900.0,0.2014329644256435,2,Other health professionals n.e.c.
+2222,0.1925,48500.0,0.2029470989494716,2,Occupational therapists
+6311,0.1925,10600.0,0.2032780231959165,2,Police community support officers
+3319,0.1925,111500.0,0.20675897163729454,2,Protective service associate professionals n.e.c.
 5222,0.1936,8100.0,0.2070118477124081,2,"Tool makers, tool fitters and markers-out"
 8231,0.195,24100.0,0.20776423208404227,2,Train and tram drivers
 3414,0.1954,11700.0,0.20812949752587298,2,Dancers and choreographers
-5232,0.1957,31400.0,0.20910978255779467,2,Vehicle body builders and repairers
-5211,0.1957,14900.0,0.2095749496589295,2,Sheet metal workers
+5211,0.1957,14900.0,0.2085946646270078,2,Sheet metal workers
+5232,0.1957,31400.0,0.2095749496589295,2,Vehicle body builders and repairers
 2255,0.1958,43900.0,0.21094547554750792,2,Paramedics
 6132,0.1958,30700.0,0.21190390709145684,2,Ambulance staff (excluding paramedics)
 9231,0.205,151100.0,0.21662113856672338,2,Security guards and related occupations
@@ -141,32 +141,32 @@
 6214,0.2405,23600.0,0.24349780684638558,2,Rail travel assistants
 3115,0.242,21900.0,0.24418150882724818,2,Quality assurance technicians
 3119,0.242,38300.0,0.2453772068120444,2,"Science, engineering and production technicians n.e.c."
-6113,0.2421,160400.0,0.25038477748466353,2,Educational support assistants
-6112,0.2421,268800.0,0.25877651686620984,2,Teaching assistants
-9233,0.2421,28200.0,0.2596569002388274,2,Exam invigilators
-9232,0.2421,63300.0,0.2616330799369371,2,School midday and crossing patrol occupations
-3231,0.2421,47000.0,0.2631003855579664,2,Higher level teaching assistants
-2237,0.245,348100.0,0.27396781293414296,2,Other registered nursing professionals
-2233,0.245,95600.0,0.2769523750058536,2,Registered specialist nurses
-2234,0.245,47500.0,0.27843529026114916,2,Registered nurse practitioners
-2235,0.245,53900.0,0.280118008835053,2,Registered mental health nurses
-2236,0.245,35300.0,0.28122004901425157,2,Registered children's nurses
-2232,0.245,88100.0,0.2839704665719682,2,Registered community nurses
-5422,0.2456,19800.0,0.28458860808891245,2,Printers
-8135,0.2456,11600.0,0.28495075160388994,2,Printing machine assistants
+3231,0.2421,47000.0,0.2468445124330737,2,Higher level teaching assistants
+9232,0.2421,63300.0,0.24882069213118338,2,School midday and crossing patrol occupations
+9233,0.2421,28200.0,0.24970107550380094,2,Exam invigilators
+6113,0.2421,160400.0,0.2547086461764201,2,Educational support assistants
+6112,0.2421,268800.0,0.2631003855579664,2,Teaching assistants
+2234,0.245,47500.0,0.2645833008132619,2,Registered nurse practitioners
+2237,0.245,348100.0,0.2754507281894385,2,Other registered nursing professionals
+2236,0.245,35300.0,0.2765527683686371,2,Registered children's nurses
+2232,0.245,88100.0,0.2793031859263537,2,Registered community nurses
+2233,0.245,95600.0,0.2822877479980644,2,Registered specialist nurses
+2235,0.245,53900.0,0.2839704665719682,2,Registered mental health nurses
+8135,0.2456,11600.0,0.28433261008694566,2,Printing machine assistants
+5422,0.2456,19800.0,0.28495075160388994,2,Printers
 5434,0.246,212100.0,0.2915723584596413,2,Chefs
 2254,0.2462,38200.0,0.29276493451758423,2,Medical radiographers
-8211,0.2467,286500.0,0.30170925495215645,2,Heavy and large goods vehicle drivers
-3433,0.2467,68300.0,0.3038415309929288,2,Fitness and wellbeing instructors
+3433,0.2467,68300.0,0.2948972105583566,2,Fitness and wellbeing instructors
+8211,0.2467,286500.0,0.3038415309929288,2,Heavy and large goods vehicle drivers
 6232,0.2487,76100.0,0.306217317328255,2,Caretakers
-6137,0.2508,23200.0,0.3069416043582099,2,Care escorts
-6135,0.2508,862400.0,0.3338651015406709,2,Care workers and home carers
-6134,0.2508,22300.0,0.3345612912289465,2,Houseparents and residential wardens
-6136,0.2508,68200.0,0.33669044534286563,2,Senior care workers
+6134,0.2508,22300.0,0.3069135070165306,2,Houseparents and residential wardens
+6136,0.2508,68200.0,0.3090426611304497,2,Senior care workers
+6135,0.2508,862400.0,0.3359661583129107,2,Care workers and home carers
+6137,0.2508,23200.0,0.33669044534286563,2,Care escorts
 2252,0.2529,26200.0,0.3375083901784181,2,Optometrists
 8219,0.2537,31700.0,0.3384980409908996,2,Road transport drivers n.e.c.
-8213,0.2537,154000.0,0.3433058083449105,2,Taxi and cab drivers and chauffeurs
-8214,0.2537,301900.0,0.3527309055148838,2,Delivery drivers and couriers
+8214,0.2537,301900.0,0.3479231381608729,2,Delivery drivers and couriers
+8213,0.2537,154000.0,0.3527309055148838,2,Taxi and cab drivers and chauffeurs
 1212,0.2603,19000.0,0.353324071617002,2,"Managers and proprietors in forestry, fishing and related services"
 1211,0.2603,32800.0,0.35434806362486926,2,Managers and proprietors in agriculture and horticulture
 3415,0.2607,41200.0,0.35563429748840986,2,Musicians
@@ -188,36 +188,36 @@
 8131,0.2819,23300.0,0.4200396484710363,3,Paper and wood machine operatives
 3582,0.2825,77300.0,0.4224528979286015,3,Health and safety managers and officers
 2483,0.2825,12700.0,0.42284938263896477,3,Environmental health professionals
-8143,0.2828,65700.0,0.42490048858155255,3,Routine inspectors and testers
-8144,0.2828,14300.0,0.4253469241215678,3,"Weighers, graders and sorters"
+8144,0.2828,14300.0,0.42329581817898004,3,"Weighers, graders and sorters"
+8143,0.2828,65700.0,0.4253469241215678,3,Routine inspectors and testers
 3113,0.285,51400.0,0.4269515945241403,3,Engineering technicians
-3219,0.2881,31300.0,0.42792875762920873,3,Health associate professionals n.e.c.
-3512,0.2881,25900.0,0.4287373366842015,3,Ship and hovercraft officers
+3512,0.2881,25900.0,0.42776017357913304,3,Ship and hovercraft officers
+3219,0.2881,31300.0,0.4287373366842015,3,Health associate professionals n.e.c.
 2462,0.2891,13000.0,0.4291431871751245,3,Probation officers
-2469,0.2891,27300.0,0.4299954732060628,3,Welfare professionals n.e.c.
-2464,0.2891,11600.0,0.4303576167210402,3,Youth work professionals
-2461,0.2891,131400.0,0.43445982860621574,3,Social workers
-3224,0.2891,40300.0,0.43571796512807703,3,Counsellors
+3224,0.2891,40300.0,0.4304013236969858,3,Counsellors
+2464,0.2891,11600.0,0.43076346721196324,3,Youth work professionals
+2461,0.2891,131400.0,0.43486567909713875,3,Social workers
+2469,0.2891,27300.0,0.43571796512807703,3,Welfare professionals n.e.c.
 5330,0.2917,63200.0,0.4376910228993335,3,Construction and building trades supervisors
-9267,0.2969,40800.0,0.43896476905546106,3,Leisure and theme park attendants
-9269,0.2969,21600.0,0.4396391052557639,3,Other elementary services occupations n.e.c.
-6312,0.2969,14700.0,0.4400980285031922,3,Parking and civil enforcement occupations
+9269,0.2969,21600.0,0.4383653590996363,3,Other elementary services occupations n.e.c.
+6312,0.2969,14700.0,0.4388242823470646,3,Parking and civil enforcement occupations
+9267,0.2969,40800.0,0.4400980285031922,3,Leisure and theme park attendants
 2121,0.2971,116900.0,0.4437475609946459,3,Civil engineers
 3511,0.2979,26700.0,0.44458111546446466,3,Aircraft pilots and air traffic controllers
-8142,0.302,42100.0,0.4458954466696845,3,Assemblers (vehicles and metal goods)
-8149,0.302,21500.0,0.4465666609431341,3,Assemblers and routine operatives n.e.c.
+8149,0.302,21500.0,0.44525232973791423,3,Assemblers and routine operatives n.e.c.
+8142,0.302,42100.0,0.4465666609431341,3,Assemblers (vehicles and metal goods)
 2123,0.3033,39500.0,0.4477998220501694,3,Electrical engineers
 7124,0.3036,15400.0,0.44828059878557047,3,Market and street traders and assistants
 7132,0.3081,179200.0,0.45387509170660134,3,Sales supervisors - retail and wholesale
 1224,0.3094,73400.0,0.45616658601688964,3,Leisure and sports managers and proprietors
 1112,0.31,10500.0,0.45649438833648126,3,Elected officers and representatives
 2251,0.3147,75900.0,0.45886393081810095,3,Pharmacists
-2324,0.3156,43900.0,0.46023445670667934,3,Early education and childcare services managers
-1233,0.3156,7500.0,0.4604686012206734,3,Early education and childcare services proprietors
-2481,0.3206,45700.0,0.4618953217926104,3,Quality control and planning engineers
-2453,0.3206,59600.0,0.4637559901971497,3,Quantity surveyors
-2129,0.3206,88700.0,0.4665251393159858,3,Engineering professionals n.e.c.
-2127,0.3206,49600.0,0.46807361503519973,3,Engineering project managers and project engineers
+1233,0.3156,7500.0,0.45909807533209496,3,Early education and childcare services proprietors
+2324,0.3156,43900.0,0.4604686012206734,3,Early education and childcare services managers
+2453,0.3206,59600.0,0.4623292696252127,3,Quantity surveyors
+2481,0.3206,45700.0,0.4637559901971497,3,Quality control and planning engineers
+2127,0.3206,49600.0,0.4653044659163636,3,Engineering project managers and project engineers
+2129,0.3206,88700.0,0.46807361503519973,3,Engineering professionals n.e.c.
 7114,0.3321,89200.0,0.47085837378830214,3,Pharmacy and optical dispensing assistants
 3212,0.3321,30200.0,0.4718011956979848,3,Pharmaceutical technicians
 2319,0.3337,138000.0,0.47610945475547506,3,Teaching professionals n.e.c.
@@ -233,31 +233,31 @@
 4133,0.342,73500.0,0.5045221110469381,3,Stock control clerks and assistants
 2411,0.3435,34600.0,0.505602297738164,3,Barristers and judges
 2412,0.3435,203900.0,0.5119679065919486,3,Solicitors and lawyers
-3221,0.344,62100.0,0.5139066231678192,3,Youth and community workers
-3222,0.344,47000.0,0.5153739287888485,3,Child and early years officers
+3222,0.344,47000.0,0.5134352122129778,3,Child and early years officers
+3221,0.344,62100.0,0.5153739287888485,3,Youth and community workers
 3229,0.344,130300.0,0.5194417994786382,3,Welfare and housing associate professionals n.e.c.
 3223,0.344,73600.0,0.521739537642633,3,Housing officers
 1232,0.3445,67500.0,0.5238468382685794,3,"Residential, day and domiciliary care managers and proprietors"
-7111,0.345,930000.0,0.55288075800384,3,Sales and retail assistants
-7115,0.345,37800.0,0.5540608463543699,3,Vehicle and parts salespersons and advisers
+7115,0.345,37800.0,0.5250269266191093,3,Vehicle and parts salespersons and advisers
+7111,0.345,930000.0,0.5540608463543699,3,Sales and retail assistants
 3421,0.3465,28600.0,0.5549537174344005,3,Interior designers
 7125,0.3465,3600.0,0.5550661068011177,3,Visual merchandisers and related occupations
 1123,0.3467,25800.0,0.5558715639292572,3,Production managers and directors in mining and energy
 3120,0.3475,82800.0,0.5584565193637513,3,"CAD, drawing and architectural technicians"
 3112,0.3479,18300.0,0.5590278319778967,3,Electrical and electronics technicians
-3429,0.3494,23100.0,0.5597489970809983,3,Design occupations n.e.c.
-3422,0.3494,20000.0,0.5603733824516491,3,"Clothing, fashion and accessories designers"
+3422,0.3494,20000.0,0.5596522173485475,3,"Clothing, fashion and accessories designers"
+3429,0.3494,23100.0,0.5603733824516491,3,Design occupations n.e.c.
 3131,0.3496,112700.0,0.5638917940152662,3,IT technicians
-3555,0.35,60900.0,0.5657930474688978,3,Estate agents and auctioneers
-1251,0.35,203600.0,0.5721492905421226,3,"Property, housing and estate managers"
+1251,0.35,203600.0,0.570248037088491,3,"Property, housing and estate managers"
+3555,0.35,60900.0,0.5721492905421226,3,Estate agents and auctioneers
 5250,0.3508,44400.0,0.5735354260649673,3,"Skilled metal, electrical and electronic trades supervisors"
 8160,0.3508,38300.0,0.5747311240497636,3,"Production, factory and assembly supervisors"
-2329,0.3523,51200.0,0.5763295505986294,3,Other educational professionals n.e.c
-2322,0.3523,70300.0,0.5785242651764669,3,Education managers
-2321,0.3523,27800.0,0.5793921608416714,3,Head teachers and principals
+2322,0.3523,70300.0,0.5769258386276009,3,Education managers
+2321,0.3523,27800.0,0.5777937342928056,3,Head teachers and principals
+2329,0.3523,51200.0,0.5793921608416714,3,Other educational professionals n.e.c
 3520,0.3615,68700.0,0.5815369245898568,3,Legal associate professionals
-2114,0.3625,29700.0,0.5824641368652732,3,Physical scientists
-1172,0.3625,43100.0,0.5838096873390256,3,Social services managers and directors
+1172,0.3625,43100.0,0.5828824750636092,3,Social services managers and directors
+2114,0.3625,29700.0,0.5838096873390256,3,Physical scientists
 2311,0.3633,233400.0,0.59109626461452,3,Higher education teaching professionals
 3417,0.3636,87600.0,0.5938310725379704,3,"Photographers, audio-visual and broadcasting equipment operators"
 1135,0.3652,51700.0,0.5954451087211027,3,Charitable organisation managers and directors
@@ -265,17 +265,17 @@
 3432,0.3655,85400.0,0.6009272122754163,4,"Sports coaches, instructors and officials"
 1136,0.3664,241400.0,0.6084635436991711,4,Human resource managers and directors
 1162,0.3694,15200.0,0.6089380765808657,4,Senior police officers
-1163,0.3694,14900.0,0.6094032436820005,4,"Senior officers in fire, ambulance, prison and related services"
-1255,0.3694,47100.0,0.6108736712298831,4,Managers and directors in the creative industries
+1255,0.3694,47100.0,0.6104085041287483,4,Managers and directors in the creative industries
+1163,0.3694,14900.0,0.6108736712298831,4,"Senior officers in fire, ambulance, prison and related services"
 1111,0.37,137200.0,0.6151569548725473,4,Chief executives and senior officials
 2419,0.3708,85500.0,0.6178262023320794,4,Legal professionals n.e.c.
-1221,0.372,47800.0,0.6193184833679347,4,Hotel and accommodation managers and proprietors
-1223,0.372,19400.0,0.619924137177466,4,Publicans and managers of licensed premises
-6250,0.372,8800.0,0.6201988667405522,4,Bed and breakfast and guest house owners and proprietors
+6250,0.372,8800.0,0.6181009318951657,4,Bed and breakfast and guest house owners and proprietors
+1221,0.372,47800.0,0.619593212931021,4,Hotel and accommodation managers and proprietors
+1223,0.372,19400.0,0.6201988667405522,4,Publicans and managers of licensed premises
 2125,0.374,33700.0,0.6212509560900988,4,Production and process engineers
-2151,0.3746,24200.0,0.6220064623885863,4,Conservation professionals
-2152,0.3746,53500.0,0.623676693255077,4,Environment professionals
-5119,0.3746,34800.0,0.6247631238000093,4,Agricultural and fishing trades n.e.c.
+5119,0.3746,34800.0,0.6223373866350311,4,Agricultural and fishing trades n.e.c.
+2151,0.3746,24200.0,0.6230928929335185,4,Conservation professionals
+2152,0.3746,53500.0,0.6247631238000093,4,Environment professionals
 1121,0.3758,250000.0,0.632567940933144,4,Production managers and directors in manufacturing
 2323,0.376,43800.0,0.6339353448948691,4,Education advisers and school inspectors
 1171,0.378,56600.0,0.6357023554938108,4,Health services and public health managers and directors
@@ -284,62 +284,62 @@
 1133,0.3852,15000.0,0.6384777484663534,4,Public relations and communications directors
 3416,0.3903,126100.0,0.6424144982283065,4,"Arts officers, producers and directors"
 2435,0.3919,4100.0,0.6425424972292899,4,Professional/Chartered company secretaries
-2224,0.3933,41000.0,0.6438224872391239,4,Psychotherapists and cognitive behaviour therapists
-2226,0.3933,33000.0,0.6448527231006977,4,Other psychologists
-2225,0.3933,25100.0,0.6456363267408645,4,Clinical psychologists
+2226,0.3933,33000.0,0.6435727330908637,4,Other psychologists
+2225,0.3933,25100.0,0.6443563367310304,4,Clinical psychologists
+2224,0.3933,41000.0,0.6456363267408645,4,Psychotherapists and cognitive behaviour therapists
 2111,0.3939,38400.0,0.646835146652514,4,Chemical scientists
-1134,0.3942,60000.0,0.6487083027644662,4,Purchasing managers and directors
-1140,0.3942,26900.0,0.6495481010879915,4,"Directors in logistics, warehousing and transport"
-1243,0.3942,43500.0,0.650906139269157,4,Managers in logistics
-1241,0.3942,81000.0,0.6534349000202925,4,Managers in transport and distribution
-1242,0.3942,73700.0,0.6557357601111405,4,Managers in storage and warehousing
+1243,0.3942,43500.0,0.6481931848336794,4,Managers in logistics
+1242,0.3942,73700.0,0.6504940449245274,4,Managers in storage and warehousing
+1134,0.3942,60000.0,0.6523672010364797,4,Purchasing managers and directors
+1140,0.3942,26900.0,0.653206999360005,4,"Directors in logistics, warehousing and transport"
+1241,0.3942,81000.0,0.6557357601111405,4,Managers in transport and distribution
 3551,0.396,74700.0,0.6580678394705212,4,Buyers and procurement officers
 7131,0.3964,83600.0,0.6606777703198414,4,Shopkeepers and owners - retail and wholesale
 3574,0.3975,178600.0,0.6662535316797528,4,Other vocational and industrial trainers
 7112,0.4056,137000.0,0.6705305714687105,4,Retail cashiers and check-out operators
 3553,0.411,32400.0,0.6715420757691647,4,Merchandisers
 2454,0.4125,66400.0,0.6736150351997253,4,Chartered surveyors
-7220,0.4158,61000.0,0.6755194105802101,4,Customer service supervisors
-4143,0.4158,70000.0,0.6777047593774878,4,Customer service managers
-4142,0.4158,17800.0,0.6782604623573669,4,Office supervisors
+4143,0.4158,70000.0,0.6758003839970029,4,Customer service managers
+4142,0.4158,17800.0,0.6763560869768821,4,Office supervisors
+7220,0.4158,61000.0,0.6782604623573669,4,Customer service supervisors
 4141,0.4158,212500.0,0.6848945569205314,4,Office managers
 2452,0.4163,62400.0,0.6868426392769618,4,"Chartered architectural technologists, planning officers and consultants"
 2119,0.4188,31900.0,0.6878385339431498,4,Natural and social science professionals n.e.c.
-2113,0.4188,63200.0,0.6898115917144061,4,Biochemists and biomedical scientists
-2162,0.4188,62000.0,0.6917471863634235,4,"Other researchers, unspecified discipline"
+2162,0.4188,62000.0,0.6897741285921671,4,"Other researchers, unspecified discipline"
+2113,0.4188,63200.0,0.6917471863634235,4,Biochemists and biomedical scientists
 2112,0.4188,29500.0,0.6926681547851334,4,Biological scientists
 4135,0.4208,32200.0,0.6936734152318811,4,Library clerks and assistants
 1132,0.4231,277600.0,0.7023398841765137,4,"Marketing, sales and advertising directors"
 3556,0.4231,288200.0,0.7113372773675912,4,Sales accounts and business development managers
-2440,0.4241,259000.0,0.7194230679175186,4,Business and financial project management professionals
-2482,0.4241,126500.0,0.7233723053868848,4,Quality assurance and regulatory professionals
-2431,0.4241,202200.0,0.729684841484164,4,Management consultants and business analysts
-3560,0.4286,161700.0,0.7347329972058755,4,Public services associate professionals
-2434,0.4286,72900.0,0.7370088818818975,4,Business and related research professionals
-2439,0.4286,86200.0,0.7396999828294023,4,"Business, research and administrative professionals n.e.c."
+2482,0.4241,126500.0,0.7152865148369574,4,Quality assurance and regulatory professionals
+2431,0.4241,202200.0,0.7215990509342366,4,Management consultants and business analysts
+2440,0.4241,259000.0,0.729684841484164,4,Business and financial project management professionals
+2434,0.4286,72900.0,0.731960726160186,4,Business and related research professionals
+2439,0.4286,86200.0,0.7346518271076908,4,"Business, research and administrative professionals n.e.c."
+3560,0.4286,161700.0,0.7396999828294023,4,Public services associate professionals
 2161,0.4288,96900.0,0.7427251299502052,4,Research and development (R&D) managers
 1150,0.4317,287700.0,0.7517069135070166,4,Managers and directors in retail and wholesale
-3534,0.435,131500.0,0.7558122473190453,4,Financial accounts managers
-3533,0.435,19900.0,0.7564335107628428,4,Financial and accounting technicians
-7123,0.4371,8900.0,0.7567113622527825,4,Roundspersons and van salespersons
-7121,0.4371,5200.0,0.7568737024491516,4,Collector salespersons and credit agents
+3533,0.435,19900.0,0.752328176950814,4,Financial and accounting technicians
+3534,0.435,131500.0,0.7564335107628428,4,Financial accounts managers
+7121,0.4371,5200.0,0.756595850959212,4,Collector salespersons and credit agents
+7123,0.4371,8900.0,0.7568737024491516,4,Roundspersons and van salespersons
 2472,0.4375,18000.0,0.7574356492827373,4,"Archivists, conservators and curators"
 2493,0.4381,68400.0,0.759571047250363,4,Public relations professionals
 9219,0.4396,18500.0,0.7601486037182149,4,Elementary administration occupations n.e.c.
 3572,0.446,35200.0,0.7612475219705602,4,Careers advisers and vocational guidance specialists
 3571,0.446,173400.0,0.7666609431341024,4,Human resources and industrial relations officers
-2131,0.4486,112100.0,0.7701606231365999,4,IT project managers
-1137,0.4486,177000.0,0.7756864336668592,4,Information technology directors
+1137,0.4486,177000.0,0.7721867536643616,4,Information technology directors
+2131,0.4486,112100.0,0.7756864336668592,4,IT project managers
 2132,0.4486,228300.0,0.7828137926728377,4,IT managers
-3541,0.45,47000.0,0.7842810982938669,4,"Estimators, valuers and assessors"
-5242,0.45,75200.0,0.7866287872875138,4,Telecoms and related network installers and repairers
-2124,0.45,37200.0,0.7877901440769243,4,Electronics engineers (professional)
+5242,0.45,75200.0,0.7851614816664846,4,Telecoms and related network installers and repairers
+2124,0.45,37200.0,0.786322838455895,4,Electronics engineers (professional)
+3541,0.45,47000.0,0.7877901440769243,4,"Estimators, valuers and assessors"
 7122,0.452,22500.0,0.7884925776189063,4,"Debt, rent and other cash collectors"
 3573,0.4567,13900.0,0.7889265254515087,4,Information technology trainers
 4134,0.458,46600.0,0.790381343365125,4,Transport and distribution clerks and assistants
 3557,0.4629,91500.0,0.7932379064358522,4,Events managers and organisers
-2141,0.466,29900.0,0.7941713625649751,4,Web design professionals
-2142,0.466,111200.0,0.7976429452257934,4,Graphic and multimedia designers
+2142,0.466,111200.0,0.7967094890966705,4,Graphic and multimedia designers
+2141,0.466,29900.0,0.7976429452257934,4,Web design professionals
 3132,0.4683,102400.0,0.8008397983235253,5,IT user support technicians
 3552,0.4693,129500.0,0.804882693598489,5,Business sales executives
 2115,0.4778,37700.0,0.8060596600221657,5,Social and humanities scientists
@@ -358,41 +358,41 @@
 2137,0.51,43100.0,0.8495231256731655,5,IT network professionals
 7214,0.513,20400.0,0.8501599987512293,5,Market research interviewers
 6212,0.5175,32300.0,0.8511683811248303,5,Travel agents
-2491,0.5185,39700.0,0.852407786085572,5,"Newspaper, periodical and broadcast editors"
-2492,0.5185,48200.0,0.8539125548288403,5,Newspaper and periodical broadcast journalists and reporters
-4216,0.52,209500.0,0.8604529915864071,5,Receptionists
-2471,0.52,22200.0,0.8611460593478295,5,Librarians
+2492,0.5185,48200.0,0.8526731498680986,5,Newspaper and periodical broadcast journalists and reporters
+2491,0.5185,39700.0,0.8539125548288403,5,"Newspaper, periodical and broadcast editors"
+2471,0.52,22200.0,0.8546056225902627,5,Librarians
+4216,0.52,209500.0,0.8611460593478295,5,Receptionists
 3412,0.5242,116500.0,0.8647831041318702,5,"Authors, writers and translators"
 3542,0.529,6600.0,0.864989151304185,5,Importers and exporters
-1231,0.5319,36000.0,0.8661130449713563,5,Health care practice managers
-4211,0.5319,79300.0,0.8685887329659866,5,Medical secretaries
-3544,0.5356,127000.0,0.8725535800696189,5,Data analysts
-3549,0.5356,84800.0,0.8752009740411782,5,Business associate professionals n.e.c.
-3543,0.5356,44300.0,0.8765839876371697,5,Project support officers
+4211,0.5319,79300.0,0.8674648392988152,5,Medical secretaries
+1231,0.5319,36000.0,0.8685887329659866,5,Health care practice managers
+3543,0.5356,44300.0,0.8699717465619781,5,Project support officers
+3544,0.5356,127000.0,0.8739365936656104,5,Data analysts
+3549,0.5356,84800.0,0.8765839876371697,5,Business associate professionals n.e.c.
 4212,0.5364,47500.0,0.8780669028924653,5,Legal secretaries
 4123,0.537,84300.0,0.8806986872297582,5,Bank and post office clerks
 2433,0.549,84600.0,0.8833398373476109,5,"Actuaries, economists and statisticians"
 7219,0.552,340000.0,0.8939543886486739,5,Customer service occupations n.e.c.
 2134,0.5544,512600.0,0.9099573856984531,5,Programmers and software development professionals
 2136,0.5584,34600.0,0.9110375723896789,5,IT quality and testing professionals
-2494,0.5594,66000.0,0.9130980441128265,5,Advertising accounts managers and creative directors
-2432,0.5594,104800.0,0.9163698234550365,5,Marketing and commercial managers
-3554,0.5594,163500.0,0.9214741738601064,5,Advertising and marketing associate professionals
+3554,0.5594,163500.0,0.9161419227947489,5,Advertising and marketing associate professionals
+2432,0.5594,104800.0,0.9194137021369589,5,Marketing and commercial managers
+2494,0.5594,66000.0,0.9214741738601064,5,Advertising accounts managers and creative directors
 2422,0.5608,300100.0,0.9308430763467211,5,Finance and investment analysts and advisers
 4122,0.57,478100.0,0.9457690086321278,5,"Book-keepers, payroll managers and wages clerks"
 7113,0.5731,16500.0,0.9462841265629146,5,Telephone salespersons
-4151,0.5807,53000.0,0.9479387477951392,5,Sales administrators
-4159,0.5807,527800.0,0.9644162777266129,5,Other administrative occupations n.e.c.
-4213,0.5837,44900.0,0.9658180228837239,5,School secretaries
-4112,0.5837,140500.0,0.9702043301125455,5,Local government administrative occupations
-4113,0.5837,47500.0,0.971687245367841,5,Officers of non-governmental organisations
-4111,0.5837,219300.0,0.9785336309570267,5,National government administrative occupations
+4159,0.5807,527800.0,0.9627616564943884,5,Other administrative occupations n.e.c.
+4151,0.5807,53000.0,0.9644162777266129,5,Sales administrators
+4111,0.5837,219300.0,0.9712626633157985,5,National government administrative occupations
+4213,0.5837,44900.0,0.9726644084729095,5,School secretaries
+4112,0.5837,140500.0,0.9770507157017311,5,Local government administrative occupations
+4113,0.5837,47500.0,0.9785336309570267,5,Officers of non-governmental organisations
 4121,0.585,42100.0,0.9798479621622466,5,Credit controllers
 4136,0.5886,63100.0,0.9818178980066498,5,Human resources administrative occupations
-4129,0.589,186100.0,0.987627803880555,5,Financial administrative occupations n.e.c.
-4131,0.589,116300.0,0.9912586048108892,5,Records clerks and assistants
-4124,0.589,50700.0,0.992841421725489,5,Finance officers
-4132,0.589,82500.0,0.9954170113794234,5,Pensions and insurance clerks and assistants
+4131,0.589,116300.0,0.985448698936984,5,Records clerks and assistants
+4132,0.589,82500.0,0.9880242885909183,5,Pensions and insurance clerks and assistants
+4124,0.589,50700.0,0.989607105505518,5,Finance officers
+4129,0.589,186100.0,0.9954170113794234,5,Financial administrative occupations n.e.c.
 3532,0.5917,42700.0,0.9967500741457628,5,Insurance underwriters
 4217,0.6114,5600.0,0.996924902049545,5,Typists and related keyboard occupations
 3531,0.6128,66300.0,0.9989947395532522,5,Brokers
