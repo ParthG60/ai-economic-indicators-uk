@@ -40,9 +40,13 @@ RED, GREEN, AMBER = VERM, BLUE, ORANGE
 SCORE = {"strong": "#0e7c86", "mild": "#74bcc4", "neutral": "#cdd9de", "contradictory": "#b3679b"}
 CHATGPT = "2022-11-01"
 _first = [True]
+_div_n = [0]
 
 def div(fig):
-    html = pio.to_html(fig, include_plotlyjs=False, full_html=False,
+    # Stable div ids: Plotly otherwise generates a random UUID per figure, so identical data
+    # still produced a byte-different HTML on every rebuild (spurious diffs/commits).
+    _div_n[0] += 1
+    html = pio.to_html(fig, include_plotlyjs=False, full_html=False, div_id=f"ai-chart-{_div_n[0]}",
                        config={"displayModeBar": False, "responsive": True})
     _first[0] = False
     return html
