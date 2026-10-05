@@ -1,9 +1,9 @@
 date,step,track,status,detail
 2026-10-05,adoption_monitor.py,Adoption — BICS firms (live) + OPN sentiment (live),ok,    - 4_crosscountry_firm_adoption.png
 2026-10-05,takeoff_tracker.py,Transformation — 9 live macro series,ok,"  warn(f""Print area cannot be set to Defined name: {defn.value}."")"
-2026-10-05,canaries.py,Labour — Textkernel job adverts (live),ok,  charts -> /mnt/c/Users/dell/ai-economic-indicators-uk/charts/canaries
+2026-10-05,canaries.py,Labour — Textkernel job adverts (live),ok,  charts -> /home/runner/work/ai-economic-indicators-uk/ai-economic-indicators-uk/charts/canaries
 2026-10-05,canaries_employment.py,"Labour — APS employment, Nomis (live)",ok,"  most-resilient (exposed, biggest rises): Health services and public health managers and directors; Environment professionals; Financial managers and directors"
-2026-10-05,canaries_lfs.py,Labour — LFS age x exposure (local-only),ok,"Wrote canaries_lfs_age_exposure.csv, canaries_lfs_young_autoaug.csv, canaries_lfs_summary.csv"
-2026-10-05,canaries_lfs_detail.py,Labour — LFS gradient/roles/WFH (local-only),ok,"Wrote canaries_lfs_age_gradient.csv, canaries_lfs_roles.csv, canaries_lfs_wfh_control.csv"
-2026-10-05,canaries_lfs_hiring.py,Labour — LFS hiring gate (local-only),ok,  -> wrote canaries_lfs_hiring.csv (360 rows)
+2026-10-05,canaries_lfs.py,Labour — LFS age x exposure (local-only),ok,No LFS microdata in data/canaries/lfs/ (EUL files are local-only). Skipping — committed aggregate CSVs are kept.
+2026-10-05,canaries_lfs_detail.py,Labour — LFS gradient/roles/WFH (local-only),ok,No LFS microdata in data/canaries/lfs/ (EUL files are local-only). Skipping — committed aggregate CSVs are kept.
+2026-10-05,canaries_lfs_hiring.py,Labour — LFS hiring gate (local-only),ok,No LFS microdata in data/canaries/lfs/ (EUL files are local-only). Skipping — committed aggregate CSVs are kept.
 2026-10-05,build_dashboard.py,Dashboard — rebuild the 4 HTML pages,ok,  Canaries: young 22-25 stock -8.6%; 22-30 exposed hiring -28% (Q5-Q1 -13pts); on-site +5.0%
