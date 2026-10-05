@@ -51,6 +51,9 @@ def _prepend_status(date, ok, failed):
         lines = open(path, encoding="utf-8").read().split("\n")
     except OSError:
         return
+    heading = f"## {date} — Automated monthly refresh"
+    if len(lines) > 1 and lines[1].strip() == heading:
+        return                                              # already logged today
     entry = [
         f"## {date} — Automated monthly refresh",
         f"Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages "

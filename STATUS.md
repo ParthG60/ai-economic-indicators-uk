@@ -2,9 +2,6 @@
 ## 2026-10-05 — Automated monthly refresh
 Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages (8/8 steps ok). Audit table in `data/refresh_status.csv`.
 
-## 2026-10-05 — Automated monthly refresh
-Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages (8/8 steps ok). Audit table in `data/refresh_status.csv`.
-
 
 ## 2026-10-05 — Data-freshness refresh: Blue Book 2026 revisions, imports advanced to 2025, verdict 2 strong
 Re-ran the live trackers and audited every source. **Verdict moves from 1 strong · 1 mild · 7 neutral to
