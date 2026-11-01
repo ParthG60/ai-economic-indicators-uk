@@ -1,4 +1,7 @@
 # STATUS
+## 2026-11-01 — Automated monthly refresh
+Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages (8/8 steps ok). Audit table in `data/refresh_status.csv`.
+
 ## 2026-10-05 — Automated monthly refresh
 Ran `run_refresh.py` across all tracks and rebuilt the 4 dashboard pages (8/8 steps ok). Audit table in `data/refresh_status.csv`.
 
